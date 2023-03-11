@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  css: ["@/assets/main.scss"],
   modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt"],
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
@@ -13,6 +14,18 @@ export default defineNuxtConfig({
     defaultLocale: "ro", // default locale of your project for Nuxt pages and routings
     detectBrowserLanguage: false,
     langDir: "lang",
+  },
+
+  googleFonts: {
+    families: {
+      Roboto: true,
+      "Averia+Serif+Libre": {
+        wght: [400],
+      },
+      Inter: {
+        wght: [400, 500, 600],
+      },
+    },
   },
   unocss: {
     // presets

@@ -1,4 +1,3 @@
 <template>
-  test
-  <nuxt-img src="/arrow.svg" />
+  <p p="t-2">test</p>
 </template>
