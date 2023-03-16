@@ -2,27 +2,30 @@
 
 <template>
   <nav
-    class="flex relative"
+    class="flex relative min-h-72px"
     justify="between"
-    p="4"
+    p="4 sm:y-7 x-10"
     bg="green100"
     align="center"
     w="full"
   >
-    <div class="flex" justify="start" items="center">
+    <div class="absolute" display="sm:none">
       <nuxt-img src="/icons/hamburger-menu.svg" />
     </div>
-    <div w="full" class="flex items-center" justify="center">
+    <div w="full" class="flex items-center" justify="center sm:start">
       <p>LOGO</p>
     </div>
     <div
       display="none sm:flex"
       justify="between"
       items="center"
-      w="full"
-      text="white md"
+      w="full sm:auto"
+      text="cream md"
+      gap="sm:40px"
     >
-      <NuxtLink to="/despre-noi">{{ $t("despreNoi") }}</NuxtLink>
+      <NuxtLink class="min-w-90px" to="/despre-noi">{{
+        $t("despreNoi")
+      }}</NuxtLink>
       <NuxtLink to="/cabana">{{ $t("cabana") }}</NuxtLink>
       <NuxtLink to="/atractii"> {{ $t("atractii") }} </NuxtLink>
       <NuxtLink to="/galerie"> {{ $t("galerie") }}</NuxtLink>
@@ -32,4 +35,12 @@
   <slot></slot>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+</style>

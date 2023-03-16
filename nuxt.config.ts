@@ -1,5 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: "Cabana Lirca",
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter:wght@400;500;600&display=swap",
+        },
+      ],
+    },
+  },
   css: ["@/assets/main.scss"],
   modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt"],
   buildModules: ["@nuxtjs/google-fonts"],
@@ -17,6 +28,9 @@ export default defineNuxtConfig({
   },
 
   googleFonts: {
+    display: "swap",
+    download: true,
+    inject: true,
     families: {
       Roboto: true,
       "Averia+Serif+Libre": {
@@ -52,8 +66,11 @@ export default defineNuxtConfig({
       },
 
       breakpoints: {
-        sm: "600px",
-        md: "640px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },
