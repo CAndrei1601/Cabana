@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import transformerVariantGroup from "@unocss/transformer-variant-group";
 export default defineNuxtConfig({
   app: {
     head: {
@@ -12,7 +13,12 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt"],
+  modules: [
+    "@nuxt/image-edge",
+    "@nuxtjs/i18n",
+    "@unocss/nuxt",
+    "@nuxtjs/device",
+  ],
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
     strategy: "prefix_except_default",
@@ -46,6 +52,7 @@ export default defineNuxtConfig({
     uno: true, // enabled `@unocss/preset-uno`
     icons: false, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,
+    transformers: [transformerVariantGroup()],
     theme: {
       colors: {
         green: {
@@ -65,12 +72,19 @@ export default defineNuxtConfig({
           "linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #EC5C1F;",
       },
 
+      //test
+      fontFamily: {
+        aveira: ["Averia Serif Libre", "cursive"],
+        inter: ["Inter", "sans-serif"],
+      },
+
       breakpoints: {
         sm: "640px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+        "3xl": "1920px",
       },
     },
   },

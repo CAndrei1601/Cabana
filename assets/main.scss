@@ -22,15 +22,15 @@ dd {
   margin: 0;
 }
 
-body {
-  background-image: none !important;
-  font-family: 'Roboto' , sans-serif;
-}
-
 button {
   cursor: pointer;
   text-transform: uppercase;
   cursor: pointer;
+  border:0;
+  text-decoration: none;
+  border-radius: 16px;
+  padding: 18px 32px;
+  transition: background-color 500ms ease-in-out;
 }
 
 button:focus {
@@ -69,4 +69,40 @@ picture {
 a {
   color: inherit !important;
   text-decoration: none;
+}
+
+.btn-primary 
+{
+  background-color: #EC5C1F;
+  color:#F0EDE4;
+  &:hover
+  {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #EC5C1F;
+  }
+}
+
+.btn-secondary
+{
+  background-color: #D1D1C7;
+  color:#303E30;
+
+  &:hover
+  {
+    background: #C3C3B9;
+  }
+}
+
+h1,
+h2,
+h3
+{
+  font-family: 'Averia Serif Libre', cursive;
+ 
+}
+
+p,
+span,
+a
+{
+  font-family: 'Inter', sans-serif;
 }
