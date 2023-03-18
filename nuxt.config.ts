@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import transformerVariantGroup from "@unocss/transformer-variant-group";
+import transformerDirectives from "@unocss/transformer-directives";
 export default defineNuxtConfig({
   app: {
     head: {
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@unocss/nuxt",
     "@nuxtjs/device",
+    "nuxt-swiper",
   ],
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
@@ -31,6 +33,11 @@ export default defineNuxtConfig({
     defaultLocale: "ro", // default locale of your project for Nuxt pages and routings
     detectBrowserLanguage: false,
     langDir: "lang",
+  },
+
+  swiper: {
+    modules: ["navigation", "pagination"],
+    styleLang: "css",
   },
 
   googleFonts: {
@@ -52,7 +59,7 @@ export default defineNuxtConfig({
     uno: true, // enabled `@unocss/preset-uno`
     icons: false, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,
-    transformers: [transformerVariantGroup()],
+    transformers: [transformerVariantGroup(), transformerDirectives()],
     theme: {
       colors: {
         green: {
@@ -83,7 +90,7 @@ export default defineNuxtConfig({
         md: "768px",
         lg: "1024px",
         xl: "1280px",
-        "2xl": "1536px",
+        "2xl": "1500px",
         "3xl": "1920px",
       },
     },
