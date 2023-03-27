@@ -2,40 +2,34 @@
   <div class="max-w-1920px" m="x-auto">
     <section>
       <div position="relative">
-        <nuxt-img
-          src="/images/image_hero-banner_Mobile.jpg"
-          width="390"
-          height="640"
-          h="full"
-          w="full"
-          format="webp"
-          v-if="$device.isMobile"
-          placeholder
-        />
-
-        <nuxt-img
-          src="/images/image_hero-banner_Tablet.jpg"
-          width="1024"
-          height="600"
-          h="auto"
-          w="full"
-          format="webp"
-          v-if="$device.isTablet"
-        />
-
-        <nuxt-img
-          src="/images/image_hero-banner_Desktop.jpg"
-          width="1024"
-          height="600"
-          h="auto"
-          w="full"
-          format="webp"
-          v-if="$device.isDesktop"
-          class="xl:max-h-600px 3xl:max-h-720px"
-          m="x-auto 3xl:(t-2)"
-          object="cover"
-          rounded=" 3xl:3xl"
-        />
+        <picture>
+          <nuxt-source
+            media="(min-width:1200px)"
+            src="/images/image_hero-banner_Desktop.jpg"
+            sizes="lg:1600"
+            width="1024"
+            height="600"
+          />
+          <nuxt-source
+            src="/images/image_hero-banner_Tablet.jpg"
+            sizes="sm:650 md:850px "
+            media="(min-width:600px)"
+            width="1024"
+            height="600"
+          />
+          <nuxt-img
+            src="/images/image_hero-banner_Mobile.jpg"
+            width="390"
+            height="640"
+            h="full"
+            w="full"
+            format="webp"
+            class="xl:max-h-600px 3xl:max-h-720px"
+            m="x-auto 3xl:(t-2)"
+            object="cover"
+            rounded=" 3xl:3xl"
+          />
+        </picture>
 
         <div
           position="absolute bottom-64px sm:(top-0 bottom-0 )"
@@ -61,35 +55,34 @@
     </section>
     <facilitati-cabana />
     <section position="relative">
-      <nuxt-img
-        src="/images/image_despre-noi_homepage_Mobile.jpg"
-        format="webp"
-        height="720"
-        width="390"
-        w="full"
-        h="full"
-        v-if="$device.isMobile"
-      />
-      <nuxt-img
-        src="/images/image_despre-noi_homepage_Tablet.jpg"
-        format="webp"
-        height="600"
-        width="1024"
-        w="full"
-        h="full"
-        v-if="$device.isTablet"
-      />
-      <nuxt-img
-        src="/images/image_despre-noi_homepage_Desktop.jpg"
-        format="webp"
-        height="720"
-        width="1920"
-        w="full"
-        h="full"
-        v-if="$device.isDesktop"
-        rounded=" 3xl:3xl"
-        class="image-radius"
-      />
+      <picture>
+        <nuxt-source
+          media="(min-width:1200px)"
+          src="/images/image_despre-noi_homepage_Desktop.jpg"
+          sizes="lg:1600"
+          height="720"
+          width="1920"
+        />
+        <nuxt-source
+          src="/images/image_despre-noi_homepage_Tablet.jpg"
+          sizes="sm:650 md:850px "
+          media="(min-width:600px)"
+          format="webp"
+          height="600"
+          width="1024"
+        />
+        <nuxt-img
+          src="/images/image_despre-noi_homepage_Mobile.jpg"
+          format="webp"
+          height="720"
+          width="390"
+          w="full"
+          h="full"
+          rounded=" 3xl:3xl"
+          class="image-radius"
+        />
+      </picture>
+
       <div
         p="y-12 x-8 sm:35px lg:56px xl:60px 2xl:72px"
         text="center green100 sm:left"
@@ -109,57 +102,129 @@
         </button>
       </div>
     </section>
-    <section position="relative">
-      <nuxt-img
-        src="/images/cabana-mobile.jpg"
-        format="webp"
-        width="400"
-        height="300"
-        w="full"
-        h="full"
-      />
-      <div
-        class="centered"
-        text="cream"
-        flex="  ~ col"
-        justify="center"
-        items="center"
-      >
-        <p m="b-10px" class="centered-text">{{ $t("cabana") }}</p>
-        <nuxt-img
-          src="/images/underline_1.png"
-          format="webp"
-          width="80"
-          height="12"
-        />
+    <section class="flex" flex="col sm:row">
+      <div position="relative">
+        <picture>
+          <nuxt-source
+            media="(min-width:600px)"
+            src="/images/cabana.jpg"
+            sizes="sm:600 lg:960"
+            height="720"
+            width="600"
+          />
+          <nuxt-img
+            src="/images/cabana-mobile.jpg"
+            format="webp"
+            width="400"
+            height="300"
+            w="full"
+            h="full"
+          />
+        </picture>
+        <div
+          class="centered"
+          text="cream"
+          flex="  ~ col"
+          justify="center"
+          items="center"
+        >
+          <p m="b-10px" class="centered-text">{{ $t("cabana") }}</p>
+
+          <nuxt-img
+            src="/images/underline_1.png"
+            format="webp"
+            width="80"
+            height="12"
+          />
+        </div>
       </div>
-    </section>
-    <section position="relative">
-      <nuxt-img
-        src="/images/atractii-mobile.jpg"
-        format="webp"
-        width="400"
-        height="300"
-        w="full"
-        h="full"
-      />
-      <div
-        class="centered"
-        text="cream"
-        flex="  ~ col"
-        justify="center"
-        items="center"
-      >
-        <p m="b-10px" class="centered-text">{{ $t("atractii") }}</p>
-        <nuxt-img
-          src="/images/underline_1.png"
-          format="webp"
-          width="80"
-          height="12"
-        />
+      <div position="relative">
+        <picture>
+          <nuxt-source
+            media="(min-width:600px)"
+            src="/images/atractii.jpg"
+            sizes="sm:600 lg:960"
+            height="720"
+            width="600"
+          />
+          <nuxt-img
+            src="/images/atractii-mobile.jpg"
+            format="webp"
+            width="400"
+            height="300"
+            w="full"
+            h="full"
+          />
+        </picture>
+        <div
+          class="centered"
+          text="cream"
+          flex="  ~ col"
+          justify="center"
+          items="center"
+        >
+          <p m="b-10px" class="centered-text">{{ $t("atractii") }}</p>
+          <nuxt-img
+            src="/images/underline_1.png"
+            format="webp"
+            width="80"
+            height="12"
+          />
+        </div>
       </div>
     </section>
     <recenzii-cabana />
+    <section position="relative">
+      <picture>
+        <nuxt-source
+          media="(min-width:1200px)"
+          src="/images/image_deer_Desktop.jpg"
+          sizes="lg:1600"
+          height="720"
+          width="1920"
+        />
+        <nuxt-source
+          src="/images/image_deer_Tablet.jpg"
+          sizes="sm:650
+        md:850px "
+          media="(min-width:600px)"
+          format="webp"
+          height="600"
+          width="1024"
+        />
+        <nuxt-img
+          src="/images/image_deer_Mobile.jpg"
+          format="webp"
+          height="720"
+          width="390"
+          w="full"
+          h="full"
+          rounded=" 3xl:3xl"
+          class="image-radius"
+        />
+      </picture>
+
+      <div
+        p="y-12 x-8 sm:35px lg:56px xl:60px 2xl:72px"
+        text="center green100 sm:left"
+        bg="cream"
+        rounded="lg 2xl:3xl"
+        position="absolute"
+        class="bottom-24px left-24px right-24px sm:(right-54px left-auto top-0 bottom-0) 2xl:(right-168px)"
+        m="y-auto"
+        h="sm:400px xl:420px 2xl:444px"
+        w="sm:404px xl:560px 2xl:672px"
+      >
+        <h2 p="b-6">{{ $t("galerie") }}</h2>
+
+        <p m="b-8" class="truncate-text">
+          {{ $t("vaInvitamSaUrmaritiGaleria") }}
+        </p>
+        <button class="btn-secondary">
+          {{ $t("veziPoze") }}
+        </button>
+      </div>
+    </section>
   </div>
 </template>
 <style scoped lang="scss">
@@ -189,6 +254,15 @@
       line-height: 74px;
     }
   }
+}
+
+.truncate-text {
+  overflow: hidden;
+  height: 100px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 </style>
 <script setup>

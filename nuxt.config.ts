@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
 
   swiper: {
-    modules: ["navigation", "pagination"],
+    modules: ["navigation", "pagination", "controller"],
     styleLang: "css",
   },
 
