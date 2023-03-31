@@ -11,40 +11,49 @@
     <nuxt-img src="/icons/quote-1.svg" width="48" height="48" />
     <h2>{{ $t("recenzii") }}</h2>
   </div>
-  <Swiper
-    :modules="[SwiperPagination]"
-    :pagination="true"
-    :slides-per-view="1"
-    :loop="true"
-    position="relative"
-    @swiper="setControlledSwiper"
+  <div
+    class="flex max-w-1088px"
+    m="x-6 md:x-64px lg:auto"
+    justify="center"
+    items="center"
+    gap="6 md:40px lg:96px"
   >
-    <SwiperSlide
-      v-for="(review, i) in data"
-      :key="`review_${i}`"
-      class="swiper-slide-class"
-    >
-      <p>
-        {{ review.text }}
-      </p>
-    </SwiperSlide>
-
-    <div class="left-arrow">
+    <div>
       <button
         @click="controlledSwiper.slidePrev()"
         w="40px"
         h="40px"
-        bg="green16"
         class="flex"
         justify="center"
         items="center"
+        bg="arrow hover:(green16)"
         p="0"
         rounded="50%"
       >
         <nuxt-img src="/icons/chevron-left.svg" width="24" height="24" />
       </button>
     </div>
-    <div class="right-arrow">
+    <Swiper
+      :modules="[SwiperPagination]"
+      :pagination="true"
+      :slides-per-view="1"
+      :loop="true"
+      position="relative"
+      class="max-w-720px"
+      @swiper="setControlledSwiper"
+    >
+      <SwiperSlide
+        v-for="(review, i) in data"
+        :key="`review_${i}`"
+        class="swiper-slide-class"
+      >
+        <p>
+          {{ review.text }}
+        </p>
+      </SwiperSlide>
+    </Swiper>
+
+    <div>
       <button
         @click="controlledSwiper.slideNext()"
         class="flex"
@@ -52,14 +61,14 @@
         items="center"
         w="40px"
         h="40px"
-        bg="green16"
+        bg="arrow hover:(green16)"
         p="0"
         rounded="50%"
       >
         <nuxt-img src="/icons/chevron-right.svg" w="24px" h="24px" />
       </button>
     </div>
-  </Swiper>
+  </div>
   <div
     w="full"
     class="flex"
@@ -88,7 +97,6 @@ const data = ref(reviews);
   align-items: center;
 
   p {
-    max-width: 220px;
     text-align: center;
     font-family: "Inter";
     font-style: normal;
@@ -105,6 +113,10 @@ const data = ref(reviews);
   left: 40px;
   transform: translate(-50%, -50%);
   z-index: 10;
+
+  @screen sm {
+    left: 60px;
+  }
 }
 
 .right-arrow {
@@ -113,5 +125,9 @@ const data = ref(reviews);
   right: 0px;
   transform: translate(-50%, -50%);
   z-index: 10;
+
+  @screen sm {
+    right: 30px;
+  }
 }
 </style>

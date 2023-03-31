@@ -70,6 +70,7 @@ export default defineNuxtConfig({
           60: "#7D8478",
           100: "#303E30",
         },
+        arrow: "rgba(48, 62, 48, 0.12)",
         greenDarker:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), #303E30;",
         cream: "#F0EDE4",
