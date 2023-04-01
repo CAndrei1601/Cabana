@@ -13,9 +13,11 @@
       <div class="absolute" display="sm:none">
         <nuxt-img src="/icons/hamburger-menu.svg" width="40" height="40" />
       </div>
-      <div w="full" class="flex items-center" justify="center sm:start">
-        <p>LOGO</p>
-      </div>
+      <NuxtLink to="/">
+        <div w="full" class="flex items-center" justify="center sm:start">
+          <p>LOGO</p>
+        </div>
+      </NuxtLink>
       <div
         display="none sm:flex"
         justify="between"
