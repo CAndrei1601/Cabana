@@ -168,6 +168,10 @@ svg:hover path {
   transition: fill 100ms ease-in-out;
 }
 
+.router-link-active {
+  color: #f88758;
+}
+
 .text-opacity {
   opacity: 0.5;
 }
