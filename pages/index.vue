@@ -54,7 +54,7 @@
       </div>
     </section>
     <div p="y-12">
-      <facilitati-cabana isHomepage="true" />
+      <facilitati-cabana :isHomepage="true" />
     </div>
     <section position="relative">
       <picture>

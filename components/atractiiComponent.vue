@@ -1,0 +1,27 @@
+<template>
+  <div
+    p="6 md:(t-8 l-40px) 3xl:(t-38px l-48px)"
+    bg="cream"
+    flex="~ col"
+    gap="4"
+    text="left green100"
+    rounded="20px md:32px"
+    h="full"
+  >
+    <h3>{{ $t("traseu") }} {{ traseuIndex }}</h3>
+    <nuxt-img
+      src="/images/underline_2.png"
+      format="webp"
+      width="75"
+      height="12"
+    />
+    <div flex="~ wrap" gap="4">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+<script setup lang="ts">
+defineProps<{
+  traseuIndex?: string;
+}>();
+</script>
