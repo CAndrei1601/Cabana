@@ -53,7 +53,9 @@
         </div>
       </div>
     </section>
-    <facilitati-cabana />
+    <div p="y-12">
+      <facilitati-cabana isHomepage="true" />
+    </div>
     <section position="relative">
       <picture>
         <nuxt-source
