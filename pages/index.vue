@@ -295,6 +295,3 @@
   }
 }
 </style>
-<script setup>
-const { isMobile, isTablet, isDesktop } = useDevice();
-</script>
