@@ -1,11 +1,15 @@
 <template>
-  <div flex="~ col  lg:row 3xl:col">
+  <div
+    flex="~ col  lg:row 3xl:col"
+    :class="{ 'flex-row-atractii': atractiiPage }"
+  >
     <nuxt-link
       :to="route"
       display="block"
       w="full lg:432px xl:auto"
       h="auto lg:432px xl:auto"
       class="flex-shrink-0"
+      :class="{ 'flex-equal-size': atractiiPage }"
     >
       <nuxt-img
         :src="src"
@@ -13,7 +17,8 @@
         width="342"
         height="342"
         sizes="lg:432px"
-        class="rounder-image"
+        class="rounder-image max-h-516px"
+        object="cover"
         w="full"
         h="auto"
       />
@@ -21,11 +26,12 @@
     <div
       bg="white"
       p="x-32px t-32px b-40px lg:(x-56pxs t-56px b-65px)"
-      flex="~ col"
+      flex="~ col "
       gap="6 lg:8"
-      justify="start"
+      justify="start lg:center"
       class="rounded-container"
       h="3xl:full"
+      :class="{ 'flex-equal-size bg-cream! h-auto!': atractiiPage }"
     >
       <h3 font="normal">{{ $t(title) }}</h3>
       <nuxt-img
@@ -54,12 +60,36 @@
 .rounded-container {
   border-radius: 0 0 20px 20px;
 
-  @screen md {
+  @screen lg {
     border-radius: 0 32px 32px 0;
   }
 
   @screen 3xl {
     border-radius: 0 0 32px 32px;
+  }
+}
+
+.flex-row-atractii {
+  @screen 3xl {
+    flex-direction: row;
+  }
+
+  .rounder-image {
+    @screen 3xl {
+      border-radius: 32px 0 0 32px;
+    }
+  }
+
+  .rounded-container {
+    @screen 3xl {
+      border-radius: 0 32px 32px 0;
+    }
+  }
+}
+
+.flex-equal-size {
+  @screen xl {
+    flex: 1 1 0px;
   }
 }
 </style>
@@ -69,5 +99,6 @@ defineProps<{
   title?: string;
   text?: string;
   route?: string;
+  atractiiPage?: boolean;
 }>();
 </script>
