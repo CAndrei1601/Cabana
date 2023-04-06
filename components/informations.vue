@@ -10,7 +10,7 @@
     m="x-auto"
     :class="{ 'justify-center! gap-48px!': contactPage }"
   >
-    <NuxtLink to="mailto:contact@cabanalirca.ro">
+    <NuxtLink aria-label="email" to="mailto:contact@cabanalirca.ro">
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
           <nuxt-img
@@ -19,12 +19,13 @@
             h="40px"
             loading="lazy"
             :class="{ 'image-filter': contactPage }"
+            alt="iconita email"
           />
         </div>
         <p :class="{ 'text-green100': contactPage }">contact@cabanalirca.ro</p>
       </div>
     </NuxtLink>
-    <NuxtLink to="tel:+40 780 123 456">
+    <NuxtLink aria-label="phone" to="tel:+40 780 123 456">
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
           <nuxt-img
@@ -33,12 +34,17 @@
             h="40px"
             loading="lazy"
             :class="{ 'image-filter': contactPage }"
+            alt="iconita telefon"
           />
         </div>
         <p :class="{ 'text-green100': contactPage }">+40 780 123 456</p>
       </div>
     </NuxtLink>
-    <NuxtLink to="https://goo.gl/maps/h64egWPeaJsnerSd9" target="blank">
+    <NuxtLink
+      aria-label="location"
+      to="https://goo.gl/maps/h64egWPeaJsnerSd9"
+      target="blank"
+    >
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
           <nuxt-img
@@ -47,6 +53,7 @@
             h="40px"
             loading="lazy"
             :class="{ 'image-filter': contactPage }"
+            alt="iconita locatie"
           />
         </div>
         <p :class="{ 'text-green100': contactPage }">

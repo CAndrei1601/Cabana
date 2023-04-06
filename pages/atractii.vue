@@ -164,5 +164,15 @@
 p {
   font-size: 14px;
   line-height: 22px;
+
+  @screen sm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @screen lg {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 </style>

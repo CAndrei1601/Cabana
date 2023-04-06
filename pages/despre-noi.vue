@@ -24,7 +24,6 @@
         width="342"
         w="full"
         h="full"
-        rounded="2xl"
         class="image-radius-2 sm:min-h-480px lg:order-2"
         object="lg:cover"
       />
@@ -48,3 +47,11 @@
     </div>
   </div>
 </template>
+<style scoped lang="scss">
+.image-radius-2 {
+  border-radius: 16px;
+  @screen sm {
+    border-radius: 32px;
+  }
+}
+</style>

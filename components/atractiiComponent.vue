@@ -1,9 +1,9 @@
 <template>
   <div
-    p="6 md:(t-8 l-40px) 3xl:(t-38px l-48px)"
+    p="6 md:(t-8 l-40px) 3xl:(y-38px l-48px)"
     bg="cream"
     flex="~ col"
-    gap="4"
+    gap="4 sm:6"
     text="left green100"
     rounded="20px md:32px"
     h="full"
@@ -15,7 +15,7 @@
       width="75"
       height="12"
     />
-    <div flex="~ wrap" gap="4">
+    <div flex="~ wrap" gap="4 md:6">
       <slot></slot>
     </div>
   </div>

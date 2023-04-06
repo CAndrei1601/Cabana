@@ -10,13 +10,23 @@
       m="x-auto"
     >
       <div flex="~ col" w="104px sm:172px" items="center" v-if="isHomepage">
-        <nuxt-img src="/icons/icon=nature.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=nature.svg"
+          width="75"
+          height="56"
+          alt="iconita copaci"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("peisajNatural") }}
         </p>
       </div>
       <div flex="~ col" w="104px sm:172px" items="center" v-if="isHomepage">
-        <nuxt-img src="/icons/icon=quiet.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=quiet.svg"
+          width="75"
+          height="56"
+          alt="iconita locatie retrasa"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("locatieRetrasa") }}
         </p>
@@ -27,7 +37,12 @@
         items="center"
         :class="{ 'order-2': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=kitchen.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=kitchen.svg"
+          width="75"
+          height="56"
+          alt="cana de cafea"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("bucatarieUtilata") }}
         </p>
@@ -38,7 +53,12 @@
         items="center"
         :class="{ 'order-3': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=wifi.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=wifi.svg"
+          width="75"
+          height="56"
+          alt="semn wifi"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("wifi") }}
         </p>
@@ -49,7 +69,12 @@
         items="center"
         :class="{ 'order-4': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=parking.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=parking.svg"
+          width="75"
+          height="56"
+          alt=" iconita masina "
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("parcarePrivata") }}
         </p>
@@ -60,7 +85,12 @@
         items="center"
         :class="{ 'order-5': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=atv.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=atv.svg"
+          width="75"
+          height="56"
+          alt="iconita ATV"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("atvDeInchiri") }}
         </p>
@@ -71,7 +101,12 @@
         items="center"
         :class="{ 'order-1': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=rooms.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=rooms.svg"
+          width="75"
+          height="56"
+          alt="iconita pat matrimonial"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("camereSpatioas") }}
         </p>
@@ -82,7 +117,12 @@
         items="center"
         :class="{ 'order-6': !isHomepage }"
       >
-        <nuxt-img src="/icons/icon=ciubar.svg" width="75" height="56" />
+        <nuxt-img
+          src="/icons/icon=ciubar.svg"
+          width="75"
+          height="56"
+          alt="iconita ciubar"
+        />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("ciubarSiSauna") }}
         </p>

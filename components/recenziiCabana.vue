@@ -8,7 +8,12 @@
     m="t-72px b-4"
     gap="24px"
   >
-    <nuxt-img src="/icons/quote-1.svg" width="48" height="48" />
+    <nuxt-img
+      src="/icons/quote-1.svg"
+      width="48"
+      height="48"
+      alt="iconite ghilimele"
+    />
     <h2>{{ $t("recenzii") }}</h2>
   </div>
   <div
@@ -20,6 +25,7 @@
   >
     <div>
       <button
+        aria-label="left arrow for swiper"
         @click="controlledSwiper.slidePrev()"
         w="40px"
         h="40px"
@@ -30,7 +36,12 @@
         p="0"
         rounded="50%"
       >
-        <nuxt-img src="/icons/chevron-left.svg" width="24" height="24" />
+        <nuxt-img
+          src="/icons/chevron-left.svg"
+          width="24"
+          height="24"
+          alt="iconita sageata stanga"
+        />
       </button>
     </div>
     <Swiper
@@ -55,6 +66,7 @@
 
     <div>
       <button
+        aria-label="right arrow for swiper"
         @click="controlledSwiper.slideNext()"
         class="flex"
         justify="center"
@@ -65,7 +77,12 @@
         p="0"
         rounded="50%"
       >
-        <nuxt-img src="/icons/chevron-right.svg" w="24px" h="24px" />
+        <nuxt-img
+          src="/icons/chevron-right.svg"
+          w="24px"
+          h="24px"
+          alt="iconita sageata dreapta "
+        />
       </button>
     </div>
   </div>
@@ -78,7 +95,12 @@
     m="t-32px b-72px"
     gap="24px"
   >
-    <nuxt-img src="/icons/quote-2.svg" width="48" height="48" />
+    <nuxt-img
+      src="/icons/quote-2.svg"
+      width="48"
+      height="48"
+      alt="iconite ghilimele"
+    />
   </div>
 </template>
 <script setup>
