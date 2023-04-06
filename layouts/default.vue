@@ -182,6 +182,14 @@ const showModal = ref(false);
 
 const body = process.client ? document.body : null;
 
+useSchemaOrg([
+  // @todo Select Identity: https://unhead-schema-org.harlanzw.com//guide/guides/identity
+  defineWebSite({
+    name: "Cabana Lirca ",
+  }),
+  defineWebPage(),
+]);
+
 watchEffect(() => {
   if (body && showModal.value) {
     body.style.overflow = "hidden";

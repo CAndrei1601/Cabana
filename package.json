@@ -19,6 +19,8 @@
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0",
     "@unocss/nuxt": "^0.50.4",
+    "nuxt-delay-hydration": "^1.1.4",
+    "nuxt-schema-org": "^2.1.2",
     "nuxt-swiper": "^1.0.1",
     "vue-easy-lightbox": "^1.15.0"
   }

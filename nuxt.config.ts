@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Cabana Lirca",
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       link: [
         {
           rel: "stylesheet",
