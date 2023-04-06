@@ -14,7 +14,21 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt", "nuxt-swiper"],
+  modules: [
+    "@nuxt/image-edge",
+    "@nuxtjs/i18n",
+    "@unocss/nuxt",
+    "nuxt-swiper",
+    "nuxt-delay-hydration",
+    "nuxt-schema-org",
+  ],
+  target: "static",
+  delayHydration: {
+    // enables nuxt-delay-hydration in dev mode for testing
+    debug: process.env.NODE_ENV === "development",
+    mode: "init",
+    include: ["/cabana", "/atractii", "/"],
+  },
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
     strategy: "prefix_except_default",
