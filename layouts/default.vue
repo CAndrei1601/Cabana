@@ -34,57 +34,22 @@
         <NuxtLink to="/cabana">{{ $t("cabana") }}</NuxtLink>
         <NuxtLink to="/atractii"> {{ $t("atractii") }} </NuxtLink>
         <NuxtLink to="/galerie"> {{ $t("galerie") }}</NuxtLink>
-        <NuxtLink to="/contact">{{ $t("contact") }}</NuxtLink>
+        <button @click="showModal = true">
+          <p>{{ $t("contact") }}</p>
+        </button>
       </div>
     </div>
   </nav>
   <slot></slot>
+  <section>
+    <Transition name="fade">
+      <ContactPopup v-if="showModal" @close-modal="showModal = false" />
+    </Transition>
+  </section>
   <footer>
     <div bg="green100">
-      <div
-        justify="center sm:between"
-        flex=" ~ wrap"
-        items="center"
-        gap="8 sm:0"
-        p="x-40px y-48px sm:8"
-        text="cream center"
-        font="600"
-        class="max-w-960px"
-        m="x-auto"
-      >
-        <div flex=" ~ col" justify="center" items="center" gap="13px">
-          <nuxt-img
-            src="/icons/footer-icon_email.svg"
-            w="40px"
-            h="40px"
-            loading="lazy"
-          />
-          <p>
-            <a href="mailto:contact@cabanalirca.ro">contact@cabanalirca.ro</a>
-          </p>
-        </div>
-        <div flex=" ~ col" justify="center" items="center" gap="13px">
-          <nuxt-img
-            src="/icons/footer-icon_phone.svg"
-            w="40px"
-            h="40px"
-            loading="lazy"
-          />
-          <p w><a href="tel:+40 780 123 456">+40 780 123 456</a></p>
-        </div>
-        <div flex=" ~ col" justify="center" items="center" gap="13px">
-          <nuxt-img
-            src="/icons/footer-icon_location.svg"
-            w="40px"
-            h="40px"
-            loading="lazy"
-          />
-          <p>
-            <a href="https://goo.gl/maps/h64egWPeaJsnerSd9" target="_blank"
-              >Rastolita, Mures, Romania</a
-            >
-          </p>
-        </div>
+      <div p="x-40px y-48px sm:8">
+        <Informations />
       </div>
     </div>
     <div justify="center" flex=" ~ col" items="center" class="footer-bg">
@@ -156,6 +121,13 @@
 </template>
 
 <style scoped lang="scss">
+button {
+  background: none;
+  @apply text-cream;
+  text-transform: none;
+  font-weight: 400;
+  padding: 0;
+}
 a {
   &:hover {
     color: #f88758 !important;
@@ -172,6 +144,16 @@ svg:hover path {
   color: #f88758;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .text-opacity {
   opacity: 0.5;
 }
@@ -181,3 +163,6 @@ svg:hover path {
     #303e30;
 }
 </style>
+<script setup>
+const showModal = ref(false);
+</script>

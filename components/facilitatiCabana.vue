@@ -6,7 +6,7 @@
       gap="16px lg:32px"
       w="full"
       text="center"
-      class="max-w-1580px"
+      class="max-w-1600px"
       m="x-auto"
     >
       <div flex="~ col" w="104px sm:172px" items="center" v-if="isHomepage">
