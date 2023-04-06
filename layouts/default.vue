@@ -34,13 +34,17 @@
         <NuxtLink to="/cabana">{{ $t("cabana") }}</NuxtLink>
         <NuxtLink to="/atractii"> {{ $t("atractii") }} </NuxtLink>
         <NuxtLink to="/galerie"> {{ $t("galerie") }}</NuxtLink>
-        <button @click="showModal = true">{{ $t("contact") }}</button>
+        <button @click="showModal = true">
+          <p>{{ $t("contact") }}</p>
+        </button>
       </div>
     </div>
   </nav>
   <slot></slot>
   <section>
-    <ContactPopup v-if="showModal" @close-modal="showModal = false" />
+    <Transition name="fade">
+      <ContactPopup v-if="showModal" @close-modal="showModal = false" />
+    </Transition>
   </section>
   <footer>
     <div bg="green100">
@@ -117,6 +121,13 @@
 </template>
 
 <style scoped lang="scss">
+button {
+  background: none;
+  @apply text-cream;
+  text-transform: none;
+  font-weight: 400;
+  padding: 0;
+}
 a {
   &:hover {
     color: #f88758 !important;
@@ -131,6 +142,16 @@ svg:hover path {
 
 .router-link-active {
   color: #f88758;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .text-opacity {

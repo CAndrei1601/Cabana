@@ -4,15 +4,20 @@
       <div class="modal" @click.stop>
         <h2 m="b-6">{{ $t("contact") }}</h2>
         <p m="b-8" w="sm:444px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          {{ $t("pentruMaiMulte") }}
         </p>
         <div class="max-w-300px mx-auto">
           <informations :contactPage="true" />
         </div>
-      </div>
-      <div @click="$emit('close-modal')">
-        <p>X</p>
+        <div
+          class="absolute"
+          cursor="pointer"
+          top="8"
+          right="8"
+          @click="$emit('close-modal')"
+        >
+          <nuxt-img class="close-icon" src="/icons/close.svg" loading="lazy" />
+        </div>
       </div>
     </div>
   </transition>
@@ -37,7 +42,7 @@ export default {};
 .modal {
   text-align: center;
   background-color: #f0ede4;
-
+  position: relative;
   padding: 64px 32px;
   border-radius: 20px;
 

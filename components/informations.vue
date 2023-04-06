@@ -10,50 +10,50 @@
     m="x-auto"
     :class="{ 'justify-center! gap-48px!': contactPage }"
   >
-    <div flex=" ~ col" justify="center" items="center" gap="13px">
-      <div :class="{ 'contact-box': contactPage }">
-        <nuxt-img
-          src="/icons/footer-icon_email.svg"
-          w="40px"
-          h="40px"
-          loading="lazy"
-          :class="{ 'image-filter': contactPage }"
-        />
+    <NuxtLink to="mailto:contact@cabanalirca.ro">
+      <div flex=" ~ col" justify="center" items="center" gap="13px">
+        <div :class="{ 'contact-box': contactPage }">
+          <nuxt-img
+            src="/icons/footer-icon_email.svg"
+            w="40px"
+            h="40px"
+            loading="lazy"
+            :class="{ 'image-filter': contactPage }"
+          />
+        </div>
+        <p :class="{ 'text-green100': contactPage }">contact@cabanalirca.ro</p>
       </div>
-      <p :class="{ 'text-green100': contactPage }">
-        <a href="mailto:contact@cabanalirca.ro">contact@cabanalirca.ro</a>
-      </p>
-    </div>
-    <div flex=" ~ col" justify="center" items="center" gap="13px">
-      <div :class="{ 'contact-box': contactPage }">
-        <nuxt-img
-          src="/icons/footer-icon_phone.svg"
-          w="40px"
-          h="40px"
-          loading="lazy"
-          :class="{ 'image-filter': contactPage }"
-        />
+    </NuxtLink>
+    <NuxtLink to="tel:+40 780 123 456">
+      <div flex=" ~ col" justify="center" items="center" gap="13px">
+        <div :class="{ 'contact-box': contactPage }">
+          <nuxt-img
+            src="/icons/footer-icon_phone.svg"
+            w="40px"
+            h="40px"
+            loading="lazy"
+            :class="{ 'image-filter': contactPage }"
+          />
+        </div>
+        <p :class="{ 'text-green100': contactPage }">+40 780 123 456</p>
       </div>
-      <p :class="{ 'text-green100': contactPage }">
-        <a href="tel:+40 780 123 456">+40 780 123 456</a>
-      </p>
-    </div>
-    <div flex=" ~ col" justify="center" items="center" gap="13px">
-      <div :class="{ 'contact-box': contactPage }">
-        <nuxt-img
-          src="/icons/footer-icon_location.svg"
-          w="40px"
-          h="40px"
-          loading="lazy"
-          :class="{ 'image-filter': contactPage }"
-        />
+    </NuxtLink>
+    <NuxtLink to="https://goo.gl/maps/h64egWPeaJsnerSd9" target="blank">
+      <div flex=" ~ col" justify="center" items="center" gap="13px">
+        <div :class="{ 'contact-box': contactPage }">
+          <nuxt-img
+            src="/icons/footer-icon_location.svg"
+            w="40px"
+            h="40px"
+            loading="lazy"
+            :class="{ 'image-filter': contactPage }"
+          />
+        </div>
+        <p :class="{ 'text-green100': contactPage }">
+          Rastolita, Mures, Romania
+        </p>
       </div>
-      <p :class="{ 'text-green100': contactPage }">
-        <a href="https://goo.gl/maps/h64egWPeaJsnerSd9" target="_blank"
-          >Rastolita, Mures, Romania</a
-        >
-      </p>
-    </div>
+    </NuxtLink>
   </div>
 </template>
 <style scoped lang="scss">

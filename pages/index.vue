@@ -47,7 +47,7 @@
             {{ $t("vaOferimUnLocPlinDe") }}
           </p>
 
-          <button class="btn-primary">
+          <button class="btn-primary" @click="showModal = true">
             {{ $t("contacteazane") }}
           </button>
         </div>
@@ -232,6 +232,11 @@
         </NuxtLink>
       </div>
     </section>
+    <section>
+      <Transition name="fade">
+        <ContactPopup v-if="showModal" @close-modal="showModal = false" />
+      </Transition>
+    </section>
   </div>
 </template>
 <style scoped lang="scss">
@@ -295,3 +300,6 @@
   }
 }
 </style>
+<script setup>
+const showModal = ref(false);
+</script>
