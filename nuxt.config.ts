@@ -14,13 +14,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: [
-    "@nuxt/image-edge",
-    "@nuxtjs/i18n",
-    "@unocss/nuxt",
-    "@nuxtjs/device",
-    "nuxt-swiper",
-  ],
+  modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt", "nuxt-swiper"],
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
     strategy: "prefix_except_default",
@@ -36,12 +30,13 @@ export default defineNuxtConfig({
   },
 
   swiper: {
-    modules: ["navigation", "pagination", "controller"],
+    modules: ["pagination", "controller"],
     styleLang: "css",
   },
 
   googleFonts: {
     display: "swap",
+    preconnect: true,
     download: true,
     inject: true,
     families: {
@@ -78,12 +73,6 @@ export default defineNuxtConfig({
         orangeHover: "#F88758",
         orangeDarker:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #EC5C1F;",
-      },
-
-      //test
-      fontFamily: {
-        aveira: ["Averia Serif Libre", "cursive"],
-        inter: ["Inter", "sans-serif"],
       },
 
       breakpoints: {

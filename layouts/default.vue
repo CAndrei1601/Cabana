@@ -11,7 +11,12 @@
       p="4 sm:(y-7 x-10) 3xl:x-168px"
     >
       <div class="absolute" display="sm:none">
-        <nuxt-img src="/icons/hamburger-menu.svg" width="40" height="40" />
+        <nuxt-img
+          src="/icons/hamburger-menu.svg"
+          width="40"
+          height="40"
+          alt="hamburger menu"
+        />
       </div>
 
       <div w="full" class="flex items-center" justify="center sm:start">
@@ -40,6 +45,7 @@
       </div>
     </div>
   </nav>
+  <div h="72px sm:83px"></div>
   <slot></slot>
   <section>
     <Transition name="fade">
@@ -121,6 +127,14 @@
 </template>
 
 <style scoped lang="scss">
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 90;
+}
 button {
   background: none;
   @apply text-cream;
@@ -165,4 +179,14 @@ svg:hover path {
 </style>
 <script setup>
 const showModal = ref(false);
+
+const body = process.client ? document.body : null;
+
+watchEffect(() => {
+  if (body && showModal.value) {
+    body.style.overflow = "hidden";
+  } else if (body) {
+    body.style.overflow = "";
+  }
+});
 </script>

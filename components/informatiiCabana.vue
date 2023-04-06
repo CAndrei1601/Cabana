@@ -28,10 +28,12 @@
       p="x-32px t-32px b-40px lg:(x-56pxs t-56px b-65px)"
       flex="~ col "
       gap="6 lg:8"
-      justify="start lg:center"
+      justify="start"
       class="rounded-container"
       h="3xl:full"
-      :class="{ 'flex-equal-size bg-cream! h-auto!': atractiiPage }"
+      :class="{
+        'flex-equal-size bg-cream! h-auto! just-center ': atractiiPage,
+      }"
     >
       <h3 font="normal">{{ $t(title) }}</h3>
       <nuxt-img
@@ -68,7 +70,11 @@
     border-radius: 0 0 32px 32px;
   }
 }
-
+.just-center {
+  @screen lg {
+    justify-content: center;
+  }
+}
 .flex-row-atractii {
   @screen 3xl {
     flex-direction: row;

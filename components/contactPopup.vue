@@ -37,7 +37,7 @@ export default {};
   justify-content: center;
   align-items: center;
   background-color: #000000da;
-  z-index: 10;
+  z-index: 999;
 }
 .modal {
   text-align: center;

@@ -1,0 +1,66 @@
+<template>
+  <section position="relative">
+    <picture>
+      <nuxt-source
+        media="(min-width:1200px)"
+        src="/images/image_despre-noi_homepage_Desktop.jpg"
+        sizes="lg:1600"
+        height="720"
+        width="1920"
+      />
+      <nuxt-source
+        src="/images/image_despre-noi_homepage_Tablet.jpg"
+        sizes="sm:650 md:850px "
+        media="(min-width:600px)"
+        format="webp"
+        height="600"
+        width="1024"
+      />
+      <nuxt-img
+        src="/images/image_despre-noi_homepage_Mobile.jpg"
+        format="webp"
+        height="720"
+        width="390"
+        w="full"
+        h="full"
+        rounded=" 3xl:3xl"
+        alt="landscape in apropierea de cabana Lirca"
+        class="image-radius sm:min-h-480px"
+      />
+    </picture>
+
+    <div
+      p="y-12 x-8 sm:35px lg:56px xl:60px 2xl:72px"
+      text="center green100 sm:left"
+      bg="cream"
+      position="absolute"
+      class="border-radius bottom-24px left-24px right-24px sm:(right-54px left-auto top-0 bottom-0) 2xl:(right-168px)"
+      m="y-auto"
+      h="sm:400px lg:420px 2xl:444px"
+      w="sm:404px lg:560px 2xl:672px"
+    >
+      <h2 p="b-6">{{ $t("despreNoi") }}</h2>
+      <p display="sm:none" p="b-8">{{ $t("cabanaLircaEste") }}</p>
+      <p p="b-24px" display="none sm:block">{{ $t("cabanLircaTabelta") }}</p>
+      <NuxtLink to="/despre-noi">
+        <button class="btn-secondary">
+          {{ $t("citesteMaiMult") }}
+        </button>
+      </NuxtLink>
+    </div>
+  </section>
+</template>
+<style scoped lang="scss">
+.image-radius {
+  @screen 3xl {
+    border-radius: 32px 32px 0 0;
+  }
+}
+
+.border-radius {
+  border-radius: 20px;
+  @screen sm {
+    border-radius: 32px;
+  }
+}
+</style>

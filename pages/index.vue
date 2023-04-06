@@ -28,6 +28,7 @@
             m="x-auto 3xl:(t-2)"
             object="cover"
             rounded=" 3xl:3xl"
+            alt="poza din fata cabanei lirca"
           />
         </picture>
 
@@ -56,182 +57,10 @@
     <div p="y-12">
       <facilitati-cabana :isHomepage="true" />
     </div>
-    <section position="relative">
-      <picture>
-        <nuxt-source
-          media="(min-width:1200px)"
-          src="/images/image_despre-noi_homepage_Desktop.jpg"
-          sizes="lg:1600"
-          height="720"
-          width="1920"
-        />
-        <nuxt-source
-          src="/images/image_despre-noi_homepage_Tablet.jpg"
-          sizes="sm:650 md:850px "
-          media="(min-width:600px)"
-          format="webp"
-          height="600"
-          width="1024"
-        />
-        <nuxt-img
-          src="/images/image_despre-noi_homepage_Mobile.jpg"
-          format="webp"
-          height="720"
-          width="390"
-          w="full"
-          h="full"
-          rounded=" 3xl:3xl"
-          class="image-radius sm:min-h-480px"
-        />
-      </picture>
-
-      <div
-        p="y-12 x-8 sm:35px lg:56px xl:60px 2xl:72px"
-        text="center green100 sm:left"
-        bg="cream"
-        position="absolute"
-        class="border-radius bottom-24px left-24px right-24px sm:(right-54px left-auto top-0 bottom-0) 2xl:(right-168px)"
-        m="y-auto"
-        h="sm:400px xl:420px 2xl:444px"
-        w="sm:404px xl:560px 2xl:672px"
-      >
-        <h2 p="b-6">{{ $t("despreNoi") }}</h2>
-        <p v-if="$device.isMobile" p="b-8">{{ $t("cabanaLircaEste") }}</p>
-        <p p="b-24px" v-else>{{ $t("cabanLircaTabelta") }}</p>
-        <NuxtLink to="/despre-noi">
-          <button class="btn-secondary">
-            {{ $t("citesteMaiMult") }}
-          </button>
-        </NuxtLink>
-      </div>
-    </section>
-    <section class="flex" flex="col sm:row">
-      <NuxtLink to="/cabana">
-        <div position="relative">
-          <picture>
-            <nuxt-source
-              media="(min-width:600px)"
-              src="/images/cabana.jpg"
-              sizes="sm:600 lg:960"
-              height="720"
-              width="600"
-            />
-            <nuxt-img
-              src="/images/cabana-mobile.jpg"
-              format="webp"
-              width="400"
-              height="300"
-              w="full"
-              h="full"
-            />
-          </picture>
-          <div
-            class="centered"
-            text="cream"
-            flex="  ~ col"
-            justify="center"
-            items="center"
-          >
-            <p m="b-10px" class="centered-text">{{ $t("cabana") }}</p>
-
-            <nuxt-img
-              src="/images/underline_1.png"
-              format="webp"
-              width="80"
-              height="12"
-            />
-          </div>
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/atractii">
-        <div position="relative">
-          <picture>
-            <nuxt-source
-              media="(min-width:600px)"
-              src="/images/atractii.jpg"
-              sizes="sm:600 lg:960"
-              height="720"
-              width="600"
-            />
-            <nuxt-img
-              src="/images/atractii-mobile.jpg"
-              format="webp"
-              width="400"
-              height="300"
-              w="full"
-              h="full"
-            />
-          </picture>
-          <div
-            class="centered"
-            text="cream"
-            flex="  ~ col"
-            justify="center"
-            items="center"
-          >
-            <p m="b-10px" class="centered-text">{{ $t("atractii") }}</p>
-            <nuxt-img
-              src="/images/underline_1.png"
-              format="webp"
-              width="80"
-              height="12"
-            />
-          </div>
-        </div>
-      </NuxtLink>
-    </section>
+    <DespreNoiHomeapge />
+    <CabanaAtractiiComponents />
     <recenzii-cabana />
-    <section position="relative">
-      <picture>
-        <nuxt-source
-          media="(min-width:1200px)"
-          src="/images/image_deer_Desktop.jpg"
-          sizes="lg:1600"
-          height="720"
-          width="1920"
-        />
-        <nuxt-source
-          src="/images/image_deer_Tablet.jpg"
-          sizes="sm:650
-        md:850px "
-          media="(min-width:600px)"
-          format="webp"
-          height="600"
-          width="1024"
-        />
-        <nuxt-img
-          src="/images/image_deer_Mobile.jpg"
-          format="webp"
-          height="720"
-          width="390"
-          w="full"
-          h="full"
-          class="image-radius-2 sm:min-h-480px"
-        />
-      </picture>
-
-      <div
-        p="y-12 x-8 sm:35px lg:56px xl:60px 2xl:72px"
-        text="center green100 sm:left"
-        bg="cream"
-        position="absolute"
-        class="border-radius bottom-24px left-24px right-24px sm:(left-54px right-auto top-0 bottom-0) 2xl:(left-168px)"
-        m="y-auto"
-        h="sm:400px xl:416px"
-        w="sm:404px xl:672px"
-      >
-        <h2 p="b-6">{{ $t("galerie") }}</h2>
-
-        <p m="b-8" class="truncate-text">
-          {{ $t("vaInvitamSaUrmaritiGaleria") }}
-        </p>
-        <NuxtLink to="/galerie">
-          <button class="btn-secondary">
-            {{ $t("veziPoze") }}
-          </button>
-        </NuxtLink>
-      </div>
-    </section>
+    <GalerieHomepage />
     <section>
       <Transition name="fade">
         <ContactPopup v-if="showModal" @close-modal="showModal = false" />
@@ -239,67 +68,16 @@
     </section>
   </div>
 </template>
-<style scoped lang="scss">
-.image-radius {
-  @screen 2xl {
-    border-radius: 32px 32px 0 0;
-  }
-}
-
-.image-radius-2 {
-  @screen 2xl {
-    border-radius: 32px 32px 0 0;
-  }
-
-  @screen 3xl {
-    border-radius: 32px;
-    margin-bottom: 8px;
-  }
-}
-
-.border-radius {
-  border-radius: 20px;
-  @screen sm {
-    border-radius: 32px;
-  }
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  &-text {
-    font-family: "Averia Serif Libre", cursive;
-    font-size: 44px;
-    line-height: 48px;
-
-    @screen sm {
-      font-size: 52px;
-      line-height: 63px;
-    }
-
-    @screen xl {
-      font-size: 68px;
-      line-height: 74px;
-    }
-  }
-}
-
-.truncate-text {
-  overflow: hidden;
-  height: 100px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
-  white-space: pre-wrap; /* let the text wrap preserving spaces */
-
-  @screen sm {
-    height: auto;
-    display: block;
-  }
-}
-</style>
 <script setup>
 const showModal = ref(false);
+
+const body = process.client ? document.body : null;
+
+watchEffect(() => {
+  if (body && showModal.value) {
+    body.style.overflow = "hidden";
+  } else if (body) {
+    body.style.overflow = "";
+  }
+});
 </script>
