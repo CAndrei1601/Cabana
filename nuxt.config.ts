@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Cabana Lirca",
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       link: [
         {
           rel: "stylesheet",
@@ -14,7 +16,20 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "@unocss/nuxt", "nuxt-swiper"],
+  modules: [
+    "@nuxt/image-edge",
+    "@nuxtjs/i18n",
+    "@unocss/nuxt",
+    "nuxt-swiper",
+    "nuxt-delay-hydration",
+    "nuxt-schema-org",
+  ],
+  delayHydration: {
+    // enables nuxt-delay-hydration in dev mode for testing
+    debug: process.env.NODE_ENV === "development",
+    mode: "init",
+    include: ["/cabana", "/atractii", "/"],
+  },
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
     strategy: "prefix_except_default",
