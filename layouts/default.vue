@@ -45,7 +45,7 @@
       </div>
     </div>
   </nav>
-  <div h="72px sm:83px"></div>
+  <div h="72px sm:80px"></div>
   <slot></slot>
   <section>
     <Transition name="fade">

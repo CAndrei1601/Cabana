@@ -17,7 +17,7 @@
         src="/images/image_deer_Mobile.jpg"
         height="720"
         width="390"
-        w="full sm:650px md:850px lg:1600px"
+        w="full "
         h="full"
         class="image-radius-2 sm:min-h-480px"
         alt="imagine cu o caprioara in zona Rastolita"

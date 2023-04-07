@@ -24,15 +24,47 @@ dd {
 
 ul {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: "Averia Serif Libre";
+  font-weight: 400;
+  src: url("~/assets/fonts/averiaseriflibre-regular-webfont.woff2")
+      format("woff2"),
+    url("~/assets/fonts/averiaseriflibre-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("~/assets/fonts/inter-regular-webfont.woff2")
+      format("woff2"),
+    url("~/assets/fonts/inter-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: url("~/assets/fonts/inter-medium-webfont.woff2")
+      format("woff2"),
+    url("~/assets/fonts/inter-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("~/assets/fonts/inter-semibold-webfont.woff2")
+      format("woff2"),
+    url("~/assets/fonts/inter-semibold-webfont.woff") format("woff");
 }
 
 button {
   cursor: pointer;
   text-transform: uppercase;
   cursor: pointer;
-  border:0;
+  border: 0;
   text-decoration: none;
   border-radius: 16px;
   padding: 18px 32px;
@@ -45,8 +77,8 @@ button:focus {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -59,7 +91,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  background-color: #F0EDE4;
+  background-color: #f0ede4;
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,122 +107,97 @@ picture {
 }
 
 a {
-  color: inherit ;
+  color: inherit;
   text-decoration: none;
 }
 
-.btn-primary 
-{
-  background-color: #EC5C1F;
-  color:#F0EDE4;
-  &:hover
-  {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #EC5C1F;
+.btn-primary {
+  background-color: #ec5c1f;
+  color: #f0ede4;
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+      #ec5c1f;
   }
 }
 
-.btn-secondary
-{
-  background-color: #D1D1C7;
-  color:#303E30;
+.btn-secondary {
+  background-color: #d1d1c7;
+  color: #303e30;
 
-  &:hover
-  {
-    background: #C3C3B9;
+  &:hover {
+    background: #c3c3b9;
   }
 }
 
 h1,
 h2,
-h3
-{
-  font-family: 'Averia Serif Libre', cursive;
- 
+h3 {
+  font-family: "Averia Serif Libre", cursive;
 }
 
 p,
 span,
-a
-{
-  font-family: 'Inter', sans-serif;
+a {
+  font-family: "Inter", sans-serif;
 }
 
-
-
-h1 
-{
+h1 {
   font-size: 44px;
   line-height: 48px;
 
-  @screen sm 
-{
-  font-size: 52px;
-line-height: 63px;
+  @screen sm {
+    font-size: 52px;
+    line-height: 63px;
+  }
+
+  @screen xl {
+    font-size: 68px;
+    line-height: 74px;
+  }
 }
 
-@screen xl 
-{
-  font-size: 68px;
-  line-height: 74px;
-}
-}
-
-h2
-{
+h2 {
   font-size: 30px;
   line-height: 36px;
 
-  @screen sm 
-  {
+  @screen sm {
     font-size: 38px;
     line-height: 38px;
   }
-  
-  @screen xl 
-  {
+
+  @screen xl {
     font-size: 40px;
     line-height: 48px;
   }
-
 }
 
-h3
-{
+h3 {
   font-size: 24px;
-line-height: 29px;
+  line-height: 29px;
 
-@screen sm 
-{
-  font-size: 30px;
-  line-height: 36px;
+  @screen sm {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @screen xl {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
-@screen xl 
-{
-  font-size: 32px;
-line-height: 38px;
-}
-
-}
-
-p ,
-a
-{
+p,
+a {
   font-size: 16px;
-line-height: 24px;
+  line-height: 24px;
 
-@screen sm 
-{
-  font-size: 16px;
-line-height: 24px;
+  @screen sm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @screen xl {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
-
-@screen xl 
-{
-  font-size: 18px;
-  line-height: 27px;
-}
-
-
-}
-
