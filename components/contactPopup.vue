@@ -16,7 +16,7 @@
           right="8"
           @click="$emit('close-modal')"
         >
-          <nuxt-img class="close-icon" src="/icons/close.svg" loading="lazy" />
+          <img class="close-icon" src="/icons/close.svg" loading="lazy" />
         </div>
       </div>
     </div>

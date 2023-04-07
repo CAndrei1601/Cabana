@@ -9,34 +9,34 @@
         <div class="card-1">
           <atractii-component traseuIndex="1">
             <p>Piatra Fantanele</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vf. Straniorul</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Piatra Fantanele</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vf. Pietrosul</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vf. Ratitis-Secu</p>
           </atractii-component>
         </div>
         <div class="card-2">
           <atractii-component traseuIndex="2">
             <p>Traseu Tip Rastolitei</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Saua Tihului</p>
           </atractii-component>
         </div>
         <div class="card-3">
           <atractii-component traseuIndex="3">
             <p>Rastolita (DN15)</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Poiana Cofu</p>
           </atractii-component>
         </div>
         <div class="card-4">
           <atractii-component traseuIndex="4">
             <p>Rastolita</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Curmatura Tihului</p>
           </atractii-component>
         </div>
@@ -45,27 +45,27 @@
         <div class="card-5">
           <atractii-component traseuIndex="5">
             <p>Gura Scurtu</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Poiana Lunga</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Taul Zanelor</p>
           </atractii-component>
         </div>
         <div class="card-6">
           <atractii-component traseuIndex="6">
             <p>Gura Tihului</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Valea Tihului</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vf. Tihu</p>
           </atractii-component>
         </div>
         <div class="card-7">
           <atractii-component traseuIndex="7">
             <p>Rastolita</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vila Visa</p>
-            <nuxt-img src="/icons/arrow.svg" width="24" height="24" />
+            <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Poiana Stagii</p>
           </atractii-component>
         </div>

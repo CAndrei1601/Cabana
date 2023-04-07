@@ -17,9 +17,8 @@
         height="600"
         width="1024"
       />
-      <nuxt-img
+      <img
         src="/images/image_deer_Mobile.jpg"
-        format="webp"
         height="720"
         width="390"
         w="full"

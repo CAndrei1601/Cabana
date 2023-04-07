@@ -9,12 +9,7 @@
     h="full"
   >
     <h3>{{ $t("traseu") }} {{ traseuIndex }}</h3>
-    <nuxt-img
-      src="/images/underline_2.png"
-      format="webp"
-      width="75"
-      height="12"
-    />
+    <img src="/images/underline_2.png" width="75" height="12" />
     <div flex="~ wrap" gap="4 md:6">
       <slot></slot>
     </div>

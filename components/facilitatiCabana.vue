@@ -10,7 +10,7 @@
       m="x-auto"
     >
       <div flex="~ col" w="104px sm:172px" items="center" v-if="isHomepage">
-        <nuxt-img
+        <img
           src="/icons/icon=nature.svg"
           width="75"
           height="56"
@@ -21,7 +21,7 @@
         </p>
       </div>
       <div flex="~ col" w="104px sm:172px" items="center" v-if="isHomepage">
-        <nuxt-img
+        <img
           src="/icons/icon=quiet.svg"
           width="75"
           height="56"
@@ -37,7 +37,7 @@
         items="center"
         :class="{ 'order-2': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=kitchen.svg"
           width="75"
           height="56"
@@ -53,7 +53,7 @@
         items="center"
         :class="{ 'order-3': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=wifi.svg"
           width="75"
           height="56"
@@ -69,7 +69,7 @@
         items="center"
         :class="{ 'order-4': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=parking.svg"
           width="75"
           height="56"
@@ -85,7 +85,7 @@
         items="center"
         :class="{ 'order-5': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=atv.svg"
           width="75"
           height="56"
@@ -101,7 +101,7 @@
         items="center"
         :class="{ 'order-1': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=rooms.svg"
           width="75"
           height="56"
@@ -117,7 +117,7 @@
         items="center"
         :class="{ 'order-6': !isHomepage }"
       >
-        <nuxt-img
+        <img
           src="/icons/icon=ciubar.svg"
           width="75"
           height="56"

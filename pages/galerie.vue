@@ -28,10 +28,9 @@
         w="full"
         h="auto"
       >
-        <nuxt-img
+        <img
           width="165"
           height="165"
-          format="webp"
           :src="image.src"
           :alt="image.title"
           w="full"

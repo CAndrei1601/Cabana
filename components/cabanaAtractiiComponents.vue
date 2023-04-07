@@ -10,9 +10,8 @@
             height="720"
             width="600"
           />
-          <nuxt-img
+          <img
             src="/images/cabana-mobile.jpg"
-            format="webp"
             width="400"
             height="300"
             w="full"
@@ -29,9 +28,8 @@
         >
           <p m="b-10px" class="centered-text">{{ $t("cabana") }}</p>
 
-          <nuxt-img
+          <img
             src="/images/underline_1.png"
-            format="webp"
             width="80"
             height="12"
             alt="iconita de delimitare a titlului "
@@ -49,9 +47,8 @@
             height="720"
             width="600"
           />
-          <nuxt-img
+          <img
             src="/images/atractii-mobile.jpg"
-            format="webp"
             width="400"
             height="300"
             w="full"
@@ -67,9 +64,8 @@
           items="center"
         >
           <p m="b-10px" class="centered-text">{{ $t("atractii") }}</p>
-          <nuxt-img
+          <img
             src="/images/underline_1.png"
-            format="webp"
             width="80"
             height="12"
             alt="iconita de delimitare a titlului "

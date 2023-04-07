@@ -9,7 +9,7 @@
       m="t-72px b-4"
       gap="24px"
     >
-      <nuxt-img
+      <img
         src="/icons/quote-1.svg"
         width="48"
         height="48"
@@ -37,7 +37,7 @@
           p="0"
           rounded="50%"
         >
-          <nuxt-img
+          <img
             src="/icons/chevron-left.svg"
             width="24"
             height="24"
@@ -78,7 +78,7 @@
           p="0"
           rounded="50%"
         >
-          <nuxt-img
+          <img
             src="/icons/chevron-right.svg"
             w="24px"
             h="24px"
@@ -96,7 +96,7 @@
       m="t-32px b-72px"
       gap="24px"
     >
-      <nuxt-img
+      <img
         src="/icons/quote-2.svg"
         width="48"
         height="48"
