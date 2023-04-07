@@ -10,12 +10,6 @@ export default defineNuxtConfig({
         lang: "ro",
       },
       viewport: "width=device-width, initial-scale=1",
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter:wght@400;500;600&display=swap",
-        },
-      ],
     },
   },
   css: ["@/assets/main.scss"],
