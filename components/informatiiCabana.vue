@@ -9,7 +9,7 @@
       w="full lg:432px xl:auto"
       h="auto lg:432px xl:auto"
       class="flex-shrink-0"
-      :class="{ 'flex-equal-size': atractiiPage }"
+      :class="{ 'flex-equal-size h-auto!': atractiiPage }"
     >
       <img
         :src="src"
@@ -19,7 +19,7 @@
         class="rounder-image max-h-516px"
         object="cover"
         w="full"
-        h="auto"
+        h="auto lg:100%"
       />
     </nuxt-link>
     <div
