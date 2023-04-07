@@ -34,6 +34,7 @@ ul {
   src: url("~/assets/fonts/averiaseriflibre-regular-webfont.woff2")
       format("woff2"),
     url("~/assets/fonts/averiaseriflibre-regular-webfont.woff") format("woff");
+    font-display: swap
 }
 
 @font-face {
@@ -42,6 +43,7 @@ ul {
   src: url("~/assets/fonts/inter-regular-webfont.woff2")
       format("woff2"),
     url("~/assets/fonts/inter-regular-webfont.woff") format("woff");
+    font-display: swap
 }
 
 @font-face {
@@ -50,6 +52,7 @@ ul {
   src: url("~/assets/fonts/inter-medium-webfont.woff2")
       format("woff2"),
     url("~/assets/fonts/inter-medium-webfont.woff") format("woff");
+    font-display: swap
 }
 
 @font-face {
@@ -58,6 +61,7 @@ ul {
   src: url("~/assets/fonts/inter-semibold-webfont.woff2")
       format("woff2"),
     url("~/assets/fonts/inter-semibold-webfont.woff") format("woff");
+    font-display: swap
 }
 
 button {
