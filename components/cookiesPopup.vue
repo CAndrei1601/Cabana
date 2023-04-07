@@ -1,7 +1,10 @@
 <template>
   <div v-if="isOpen" class="cookie-popup">
     <p>
-      Acest site folosește <NuxtLink to="/cookies"><u>cookies.</u></NuxtLink>
+      {{ $t("acestSiteFoloseste")
+      }}<NuxtLink to="/cookies"
+        ><u>{{ $t("cookies") }}.</u></NuxtLink
+      >
     </p>
     <button @click="acceptCookies" class="secondary">Accept</button>
   </div>
