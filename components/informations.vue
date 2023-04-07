@@ -13,7 +13,7 @@
     <NuxtLink aria-label="email" to="mailto:contact@cabanalirca.ro">
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
-          <nuxt-img
+          <img
             src="/icons/footer-icon_email.svg"
             w="40px"
             h="40px"
@@ -28,7 +28,7 @@
     <NuxtLink aria-label="phone" to="tel:+40 780 123 456">
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
-          <nuxt-img
+          <img
             src="/icons/footer-icon_phone.svg"
             w="40px"
             h="40px"
@@ -47,7 +47,7 @@
     >
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
-          <nuxt-img
+          <img
             src="/icons/footer-icon_location.svg"
             w="40px"
             h="40px"

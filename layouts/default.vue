@@ -11,7 +11,7 @@
       p="4 sm:(y-7 x-10) 3xl:x-168px"
     >
       <div class="absolute" display="sm:none">
-        <nuxt-img
+        <img
           src="/icons/hamburger-menu.svg"
           width="40"
           height="40"

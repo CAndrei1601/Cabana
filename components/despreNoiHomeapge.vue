@@ -12,13 +12,11 @@
         src="/images/image_despre-noi_homepage_Tablet.jpg"
         sizes="sm:650 md:850px "
         media="(min-width:600px)"
-        format="webp"
         height="600"
         width="1024"
       />
-      <nuxt-img
+      <img
         src="/images/image_despre-noi_homepage_Mobile.jpg"
-        format="webp"
         height="720"
         width="390"
         w="full"

@@ -13,13 +13,11 @@
         sizes="sm:650
         md:850px lg:896px"
         media="(min-width:600px)"
-        format="webp"
         height="944"
         width="944"
       />
-      <nuxt-img
+      <img
         src="/images/image_despre-noi.jpg"
-        format="webp"
         height="426"
         width="342"
         w="full"

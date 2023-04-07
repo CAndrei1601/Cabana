@@ -11,9 +11,8 @@
       class="flex-shrink-0"
       :class="{ 'flex-equal-size': atractiiPage }"
     >
-      <nuxt-img
+      <img
         :src="src"
-        format="webp"
         width="342"
         height="342"
         sizes="lg:432px"
@@ -36,12 +35,7 @@
       }"
     >
       <h3 font="normal">{{ $t(title) }}</h3>
-      <nuxt-img
-        src="/images/underline_2.png"
-        format="webp"
-        width="80"
-        height="12"
-      />
+      <img src="/images/underline_2.png" width="80" height="12" />
       <p>{{ $t(text) }}</p>
     </div>
   </div>

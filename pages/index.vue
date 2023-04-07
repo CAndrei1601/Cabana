@@ -17,13 +17,12 @@
             width="1024"
             height="600"
           />
-          <nuxt-img
+          <img
             src="/images/image_hero-banner_Mobile.jpg"
             width="390"
             height="640"
             h="full"
             w="full"
-            format="webp"
             class="xl:max-h-600px 3xl:max-h-720px"
             m="x-auto 3xl:(t-2)"
             object="cover"
