@@ -1,16 +1,14 @@
 <template>
   <section position="relative">
     <picture>
-      <nuxt-source
+      <source
         media="(min-width:1200px)"
-        src="/images/image_despre-noi_homepage_Desktop.jpg"
-        sizes="lg:1600"
+        srcset="/images/image_despre-noi_homepage_Desktop.jpg"
         height="720"
         width="1920"
       />
-      <nuxt-source
-        src="/images/image_despre-noi_homepage_Tablet.jpg"
-        sizes="sm:650 md:850px "
+      <source
+        srcset="/images/image_despre-noi_homepage_Tablet.jpg"
         media="(min-width:600px)"
         height="600"
         width="1024"

@@ -1,19 +1,15 @@
 <template>
   <section position="relative">
     <picture>
-      <nuxt-source
+      <source
         media="(min-width:1200px)"
-        src="/images/image_deer_Desktop.jpg"
-        sizes="lg:1600"
+        srcset="/images/image_deer_Desktop.jpg"
         height="720"
         width="1920"
       />
-      <nuxt-source
-        src="/images/image_deer_Tablet.jpg"
-        sizes="sm:650
-      md:850px "
+      <source
+        srcset="/images/image_deer_Tablet.jpg"
         media="(min-width:600px)"
-        format="webp"
         height="600"
         width="1024"
       />
@@ -21,7 +17,7 @@
         src="/images/image_deer_Mobile.jpg"
         height="720"
         width="390"
-        w="full"
+        w="full sm:650px md:850px lg:1600px"
         h="full"
         class="image-radius-2 sm:min-h-480px"
         alt="imagine cu o caprioara in zona Rastolita"

@@ -8,10 +8,8 @@
     m="lg:x-auto"
   >
     <picture class="lg:order-2">
-      <nuxt-source
-        src="/images/image_despre-noi_Tablet.jpg"
-        sizes="sm:650
-        md:850px lg:896px"
+      <source
+        srcset="/images/image_despre-noi_Tablet.jpg"
         media="(min-width:600px)"
         height="944"
         width="944"
@@ -20,7 +18,7 @@
         src="/images/image_despre-noi.jpg"
         height="426"
         width="342"
-        w="full"
+        w="full ssm:650 md:850px lg:896px"
         h="full"
         class="image-radius-2 sm:min-h-480px lg:order-2"
         object="lg:cover"
