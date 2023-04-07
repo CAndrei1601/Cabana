@@ -24,8 +24,8 @@ export default defineNuxtConfig({
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing
     debug: process.env.NODE_ENV === "development",
-    mode: "init",
-    include: ["/cabana", "/atractii", "/"],
+    mode: "mount",
+    include: ["/cabana", "/atractii"],
   },
   buildModules: ["@nuxtjs/google-fonts"],
   i18n: {

@@ -124,6 +124,7 @@
       </p>
     </div>
   </footer>
+  <CookiesPopup />
 </template>
 
 <style scoped lang="scss">
