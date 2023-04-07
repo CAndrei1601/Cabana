@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <source :media="media" :srcset="cSizes.srcset" :sizes="cSizes.sizes" />
 </template>
 
@@ -17,4 +17,4 @@ export default {
     },
   },
 };
-</script>
+</script> -->

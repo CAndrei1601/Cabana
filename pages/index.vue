@@ -3,16 +3,14 @@
     <section>
       <div position="relative">
         <picture>
-          <nuxt-source
+          <source
             media="(min-width:1200px)"
-            src="/images/image_hero-banner_Desktop.jpg"
-            sizes="lg:1600"
+            srcset="/images/image_hero-banner_Desktop.jpg"
             width="1024"
             height="600"
           />
-          <nuxt-source
-            src="/images/image_hero-banner_Tablet.jpg"
-            sizes="sm:650 md:850px "
+          <source
+            srcset="/images/image_hero-banner_Tablet.jpg"
             media="(min-width:600px)"
             width="1024"
             height="600"

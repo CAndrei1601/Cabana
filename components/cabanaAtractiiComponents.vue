@@ -3,10 +3,9 @@
     <NuxtLink to="/cabana">
       <div position="relative">
         <picture>
-          <nuxt-source
+          <source
             media="(min-width:600px)"
-            src="/images/cabana.jpg"
-            sizes="sm:600 lg:960"
+            srcset="/images/cabana.jpg"
             height="720"
             width="600"
           />
@@ -14,8 +13,8 @@
             src="/images/cabana-mobile.jpg"
             width="400"
             height="300"
-            w="full"
-            h="full"
+            w="full sm:600px lg:960px"
+            h="full "
             alt="poza in mod portret cu cabana Lirca"
           />
         </picture>
@@ -40,10 +39,9 @@
     <NuxtLink to="/atractii">
       <div position="relative">
         <picture>
-          <nuxt-source
+          <source
             media="(min-width:600px)"
-            src="/images/atractii.jpg"
-            sizes="sm:600 lg:960"
+            srcset="/images/atractii.jpg"
             height="720"
             width="600"
           />
@@ -51,7 +49,7 @@
             src="/images/atractii-mobile.jpg"
             width="400"
             height="300"
-            w="full"
+            w="full sm:600px lg:960px"
             h="full"
             alt="peisaj din zona Rastolita judetul Mures"
           />

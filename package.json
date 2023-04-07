@@ -8,7 +8,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
     "@nuxtjs/i18n": "^8.0.0-beta.10",
     "@unocss/transformer-directives": "^0.50.6",
     "@unocss/transformer-variant-group": "^0.50.6",

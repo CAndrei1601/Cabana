@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/main.scss"],
   modules: [
-    "@nuxt/image-edge",
     "@nuxtjs/i18n",
     "@unocss/nuxt",
     "nuxt-swiper",
