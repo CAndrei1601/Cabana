@@ -3,20 +3,80 @@
 <template>
   <nav bg="green100">
     <div
-      align="center"
+      items="center"
       w="full"
       m="x-auto"
       class="flex relative min-h-72px max-w-1920px"
       justify="between"
       p="4 sm:(y-7 x-10) 3xl:x-168px"
     >
-      <div class="absolute" display="sm:none">
-        <img
-          src="/icons/hamburger-menu.svg"
-          width="40"
-          height="40"
-          alt="hamburger menu"
-        />
+      <div
+        class="absolute"
+        display="flex sm:none"
+        justify="center"
+        items="center"
+      >
+        <button
+          class="menu"
+          z="20"
+          :class="{ opened: isOpened }"
+          :aria-expanded="isOpened"
+          aria-label="Main Menu"
+          @click="toggleMenu"
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 100 100"
+            class="hamburger-svg"
+          >
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="menu-mobile" :class="{ 'menu-mobile-open': isOpened }">
+        <div
+          flex="~ col"
+          justify="start"
+          w="full"
+          bg="green100"
+          text="cream"
+          gap="32px"
+          p="y-96px x-48px"
+        >
+          <NuxtLink
+            @click="toggleMenu"
+            class="min-w-90px sm:min-w-100px"
+            to="/"
+            >{{ $t("acasa") }}</NuxtLink
+          >
+          <NuxtLink
+            @click="toggleMenu"
+            class="min-w-90px sm:min-w-100px"
+            to="/despre-noi"
+            >{{ $t("despreNoi") }}</NuxtLink
+          >
+          <NuxtLink @click="toggleMenu" to="/cabana">{{
+            $t("cabana")
+          }}</NuxtLink>
+          <NuxtLink @click="toggleMenu" to="/atractii">
+            {{ $t("atractii") }}
+          </NuxtLink>
+          <NuxtLink @click="toggleMenu" to="/galerie">
+            {{ $t("galerie") }}</NuxtLink
+          >
+          <button @click="toggleContact">
+            <p text="left">{{ $t("contact") }}</p>
+          </button>
+        </div>
       </div>
 
       <div w="full" class="flex items-center" justify="center sm:start">
@@ -71,6 +131,7 @@
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="socials"
             >
               <path
                 d="M19.9992 1.53613C9.80156 1.53613 1.53516 9.80253 1.53516 20.0001C1.53516 30.1977 9.80156 38.4641 19.9992 38.4641C30.1968 38.4641 38.4632 30.1977 38.4632 20.0001C38.4632 9.80253 30.1968 1.53613 19.9992 1.53613ZM26.054 21.0289C25.3124 21.0165 24.6344 21.0381 23.7724 21.0009C23.6324 20.9945 21.3872 21.0281 21.394 21.0689C21.5572 22.0673 21.3228 23.1281 21.3368 24.1377C21.3452 24.7261 21.518 30.0493 21.4384 32.0129L16.9892 32.0537C16.9708 30.3817 17.0524 28.6621 16.98 26.4569C16.9652 26.0037 16.9504 21.2325 16.8976 20.9813C16.8976 20.9813 14.9312 20.9953 14.012 21.0009C14.012 21.0009 13.9996 19.2401 13.9996 18.6445C13.9996 18.0593 13.9996 17.4749 13.9996 16.8897C13.9996 16.8897 16.2948 16.7625 16.9536 16.7053C16.9536 16.7053 17.0208 14.4717 17.112 13.7481C17.2172 12.9217 17.2276 12.0865 17.7128 11.3553C18.602 10.0169 19.4796 8.83733 21.1144 8.48173C21.7328 8.34653 25.8108 7.54493 25.962 8.20453L25.8692 12.1757C24.7604 12.1757 23.4316 12.0633 22.3 12.9037C21.67 13.3725 21.496 13.7629 21.4324 14.5341C21.3944 14.9825 21.3856 16.7973 21.3856 16.7973C21.9832 16.8825 22.8676 16.8449 23.51 16.7973C24.2356 16.7433 26.0984 16.9357 26.0984 16.9357C26.0976 18.1369 26.0496 20.9101 26.054 21.0289Z"
@@ -88,6 +149,7 @@
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="socials"
             >
               <path
                 d="M21.2553 16.8459C19.6065 16.1195 17.5745 16.9815 16.8717 18.6083C16.4129 19.6703 16.4081 20.7371 16.7829 21.6163C17.2533 22.7199 18.3213 23.5275 19.8393 23.6607C21.5825 23.8131 23.0769 22.5779 23.4785 20.9091C23.8533 19.3491 22.6917 17.4791 21.2553 16.8459Z"
@@ -150,7 +212,22 @@ a {
   }
 }
 
-svg:hover path {
+.menu-mobile {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 2;
+  overflow: hidden;
+  transition: height 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &-open {
+    height: 496px;
+  }
+}
+
+.socials:hover path {
   fill: #f88758;
   transition: fill 100ms ease-in-out;
 }
@@ -177,11 +254,65 @@ svg:hover path {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)),
     #303e30;
 }
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 5;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 5;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 5;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 3;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
 </style>
-<script setup>
+<script setup lang="ts">
 const showModal = ref(false);
 
 const body = process.client ? document.body : null;
+const menuMobile = ref(false);
+
+const isOpened = ref(false);
+
+const toggleMenu = () => {
+  isOpened.value = !isOpened.value;
+};
+
+const toggleContact = () => {
+  isOpened.value = !isOpened.value;
+  showModal.value = true;
+};
 
 useSchemaOrg([
   // @todo Select Identity: https://unhead-schema-org.harlanzw.com//guide/guides/identity
