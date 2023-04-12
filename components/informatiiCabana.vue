@@ -42,7 +42,14 @@
       }"
     >
       <h3 font="normal">{{ $t(title) }}</h3>
-      <img src="/images/underline_2.png" width="80" height="12" />
+      <picture>
+        <source
+          media="(min-width: 200px)"
+          type="image/webp"
+          srcset="/images/underline_2.webp"
+        />
+        <img src="/images/underline_2.png" width="80" height="12" />
+      </picture>
       <p>{{ $t(text) }}</p>
     </div>
   </div>

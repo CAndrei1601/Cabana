@@ -14,7 +14,7 @@
       <source
         media="(min-width: 200px)"
         type="image/webp"
-        srcset="/images/underline_2.png.webp"
+        srcset="/images/underline_2.webp"
       />
       <img src="/images/underline_2.png" width="75" height="12" />
     </picture>
