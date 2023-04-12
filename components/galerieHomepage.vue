@@ -3,13 +3,22 @@
     <picture>
       <source
         media="(min-width:1200px)"
-        srcset="/images/image_deer_Desktop.jpg"
+        srcset="/images/image_deer_Desktop.webp, /images/image_deer_Desktop.jpg"
         height="720"
         width="1920"
+        type="image/webp"
       />
       <source
-        srcset="/images/image_deer_Tablet.jpg"
+        srcset="/images/image_deer_Tablet.webp, /images/image_deer_Tablet.jpg"
         media="(min-width:600px)"
+        height="600"
+        type="image/webp"
+        width="1024"
+      />
+      <source
+        srcset="/images/image_deer_Mobile.webp, /images/image_deer_Mobile.jpg"
+        media="(min-width:200px)"
+        type="image/webp"
         height="600"
         width="1024"
       />

@@ -12,7 +12,8 @@
       m="x-auto"
     >
       <InformatiiCabana
-        src="/images/gallery-image-2.jpg"
+        src="/images/image_interior-cabana.jpg"
+        srcWebp="/images/image_interior-cabana.webp"
         title="interiorCabana"
         text="cabanaSeIntinde"
         class="flex-1"
@@ -20,14 +21,16 @@
       />
 
       <InformatiiCabana
-        src="/images/gallery-image-3.jpg"
+        src="/images/image_exterior-cabana.jpg"
+        srcWebp="/images/image_exterior-cabana.webp"
         title="exteriorCabana"
         text="proprietateaAreOgradina"
         class="flex-1"
         route="galerie"
       />
       <InformatiiCabana
-        src="/images/gallery-image-4.jpg"
+        src="/images/image_alte-facilitati.jpg"
+        srcWebp="/images/image_alte-facilitati.webp"
         title="alteFacilitati"
         text="alteFacilitatiAleProprietatii"
         class="flex-1"

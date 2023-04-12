@@ -27,17 +27,25 @@
         @click="() => showImg(image.id - 1)"
         w="full"
         h="auto"
+        cursor="pointer"
       >
-        <img
-          width="165"
-          height="165"
-          :src="image.src"
-          :alt="image.title"
-          w="full"
-          h="auto"
-          loading="lazy"
-          class="image-radius"
-        />
+        <picture>
+          <source
+            media="(min-width: 200px)"
+            type="image/webp"
+            :srcset="image.srcWebp"
+          />
+          <img
+            width="165"
+            height="165"
+            :src="image.src"
+            :alt="image.title"
+            w="full"
+            h="auto"
+            loading="lazy"
+            class="image-radius"
+          />
+        </picture>
       </div>
     </div>
 
@@ -63,36 +71,84 @@ const images = ref([
     title: "Image 1",
     category: "exterior",
     src: "/images/gallery-image-1.jpg",
+    srcWebp: "/images/gallery-image-1.webp",
   },
   {
     id: 2,
     title: "Image 2",
-    category: "living",
+    category: "camere",
     src: "/images/gallery-image-2.jpg",
+    srcWebp: "/images/gallery-image-2.webp",
   },
   {
     id: 3,
     title: "Image 3",
-    category: "bucatarie",
+    category: "camere",
     src: "/images/gallery-image-3.jpg",
+    srcWebp: "/images/gallery-image-3.webp",
   },
   {
     id: 4,
     title: "Image 4",
-    category: "camere",
+    category: "hol",
     src: "/images/gallery-image-4.jpg",
+    srcWebp: "/images/gallery-image-4.webp",
   },
   {
     id: 5,
     title: "Image 5",
-    category: "balcon",
+    category: "hol",
     src: "/images/gallery-image-5.jpg",
+    srcWebp: "/images/gallery-image-5.webp",
   },
   {
     id: 6,
-    title: "Image 5",
-    category: "balcon",
+    title: "Image 6",
+    category: "living",
     src: "/images/gallery-image-6.jpg",
+    srcWebp: "/images/gallery-image-6.webp",
+  },
+  {
+    id: 7,
+    title: "Image 7",
+    category: "living",
+    src: "/images/gallery-image-7.jpg",
+    srcWebp: "/images/gallery-image-7.webp",
+  },
+  {
+    id: 8,
+    title: "Image 8",
+    category: "bucatarie",
+    src: "/images/gallery-image-8.jpg",
+    srcWebp: "/images/gallery-image-8.webp",
+  },
+  {
+    id: 9,
+    title: "Image 9",
+    category: "camere",
+    src: "/images/gallery-image-9.jpg",
+    srcWebp: "/images/gallery-image-9.webp",
+  },
+  {
+    id: 10,
+    title: "Image 10",
+    category: "exterior",
+    src: "/images/gallery-image-10.jpg",
+    srcWebp: "/images/gallery-image-10.webp",
+  },
+  {
+    id: 11,
+    title: "Image 11",
+    category: "exterior",
+    src: "/images/gallery-image-11.jpg",
+    srcWebp: "/images/gallery-image-11.webp",
+  },
+  {
+    id: 12,
+    title: "Image 12",
+    category: "exterior",
+    src: "/images/gallery-image-12.jpg",
+    srcWebp: "/images/gallery-image-12.webp",
   },
 ]);
 

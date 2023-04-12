@@ -9,10 +9,19 @@
   >
     <picture class="lg:order-2">
       <source
-        srcset="/images/image_despre-noi_Tablet.jpg"
+        srcset="
+          /images/image_despre-noi_Tablet.webp,
+          /images/image_despre-noi_Tablet.jpg
+        "
         media="(min-width:600px)"
         height="944"
         width="944"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 200px)"
+        type="image/webp"
+        srcset="/images/image_despre-noi.webp"
       />
       <img
         src="/images/image_despre-noi.jpg"

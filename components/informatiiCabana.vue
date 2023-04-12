@@ -11,16 +11,23 @@
       class="flex-shrink-0"
       :class="{ 'flex-equal-size h-auto!': atractiiPage }"
     >
-      <img
-        :src="src"
-        width="342"
-        height="342"
-        sizes="lg:432px"
-        class="rounder-image max-h-516px"
-        object="cover"
-        w="full"
-        h="auto lg:100%"
-      />
+      <picture>
+        <source
+          media="(min-width: 200px)"
+          type="image/webp"
+          :srcset="srcWebp"
+        />
+        <img
+          :src="src"
+          width="342"
+          height="342"
+          sizes="lg:432px"
+          class="rounder-image max-h-516px"
+          object="cover"
+          w="full"
+          h="auto lg:100%"
+        />
+      </picture>
     </nuxt-link>
     <div
       bg="white"
@@ -100,5 +107,6 @@ defineProps<{
   text?: string;
   route?: string;
   atractiiPage?: boolean;
+  srcWebp?: string;
 }>();
 </script>
