@@ -12,7 +12,7 @@
           />
           <source
             media="(min-width:200px)"
-            srcset="/images/cabana-mobile.webp, /images/cabana-mobile.jpg"
+            srcset="/images/cabana-mobile.webp"
             height="720"
             width="600"
             type="image/webp"

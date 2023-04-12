@@ -22,10 +22,7 @@
         width="1024"
       />
       <source
-        srcset="
-          /images/image_despre-noi_homepage_Mobile.webp,
-          /images/image_despre-noi_homepage_Mobile.jpg
-        "
+        srcset="/images/image_despre-noi_homepage_Mobile.webp"
         type="image/webp"
         media="(min-width:200px)"
         height="600"
