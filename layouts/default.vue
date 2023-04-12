@@ -176,9 +176,15 @@
         items="center"
         m=" b-48px sm:b-26px"
       >
-        <p>{{ $t("booking") }}</p>
-        <p>{{ $t("politicaDeUtilizare") }}</p>
-        <p>{{ $t("politicaDeConf") }}</p>
+        <NuxtLink target="_blank" to="https://www.booking.com/hotel/ro/cabana-ghita-rastolita1.ro.html?aid=318615&label=New_Romanian_RO_RO_27026376865-jVsIlP4zXhNaIzBkAG9XkAS634117836903%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-140566008985%3Alp9040264%3Ali%3Adec%3Adm%3Aag27026376865%3Acmp400536985&sid=1fff32e51692587ed42f485cdcdd3427&dest_id=-1168352;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1681324784;srpvid=4ee08337d7f1006d;type=total;ucfs=1&#hotelTmpl"
+          ><p>{{ $t("booking") }}</p></NuxtLink
+        >
+        <NuxtLink to="/cookies"
+          ><p>{{ $t("politicaDeUtilizare") }}</p></NuxtLink
+        >
+        <NuxtLink to="/confidentialitate"
+          ><p>{{ $t("politicaDeConf") }}</p></NuxtLink
+        >
       </div>
 
       <p m="b-48px sm:b-26px" text="cream">
