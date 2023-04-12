@@ -3,13 +3,28 @@
     <picture>
       <source
         media="(min-width:1200px)"
-        srcset="/images/image_despre-noi_homepage_Desktop.jpg"
+        srcset="
+          /images/image_despre-noi_homepage_Desktop.webp,
+          /images/image_despre-noi_homepage_Desktop.jpg
+        "
+        type="image/webp"
         height="720"
         width="1920"
       />
       <source
-        srcset="/images/image_despre-noi_homepage_Tablet.jpg"
+        srcset="
+          /images/image_despre-noi_homepage_Tablet.webp,
+          /images/image_despre-noi_homepage_Tablet.jpg
+        "
+        type="image/webp"
         media="(min-width:600px)"
+        height="600"
+        width="1024"
+      />
+      <source
+        srcset="/images/image_despre-noi_homepage_Mobile.webp"
+        type="image/webp"
+        media="(min-width:200px)"
         height="600"
         width="1024"
       />

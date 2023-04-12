@@ -9,7 +9,15 @@
     h="full"
   >
     <h3>{{ $t("traseu") }} {{ traseuIndex }}</h3>
-    <img src="/images/underline_2.png" width="75" height="12" />
+
+    <picture>
+      <source
+        media="(min-width: 200px)"
+        type="image/webp"
+        srcset="/images/underline_2.png.webp"
+      />
+      <img src="/images/underline_2.png" width="75" height="12" />
+    </picture>
     <div flex="~ wrap" gap="4 md:6">
       <slot></slot>
     </div>

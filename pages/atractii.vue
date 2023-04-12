@@ -73,6 +73,7 @@
     </div>
     <div m="t-56px x-auto" class="max-w-1580px">
       <InformatiiCabana
+        srcWebp="/images/image_partia-toplita.webp"
         src="/images/image_partia-toplita.jpg"
         title="partiaToplita"
         text="laOdistantaDeAprox"

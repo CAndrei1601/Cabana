@@ -5,15 +5,26 @@
         <picture>
           <source
             media="(min-width:1200px)"
-            srcset="/images/image_hero-banner_Desktop.jpg"
+            srcset="
+              /images/image_hero-banner_Desktop.webp,
+              /images/image_hero-banner_Desktop.jpg
+            "
             width="1024"
             height="600"
+            type="image/webp"
           />
           <source
-            srcset="/images/image_hero-banner_Tablet.jpg"
-            media="(min-width:600px)"
-            width="1024"
-            height="600"
+            media="(min-width: 600px)"
+            type="image/webp"
+            srcset="
+              /images/image_hero-banner_Tablet.webp,
+              /images/image_hero-banner_Tablet.jpg
+            "
+          />
+          <source
+            media="(min-width: 200px)"
+            type="image/webp"
+            srcset="/images/image_hero-banner_Mobile.webp"
           />
           <img
             src="/images/image_hero-banner_Mobile.jpg"
