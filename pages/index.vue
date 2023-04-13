@@ -88,6 +88,7 @@ useHead({
       content:
         "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
     },
+    { hid: "robots", name: "robots", content: "index, follow" },
   ],
 });
 
