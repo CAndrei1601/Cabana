@@ -195,6 +195,7 @@
   <CookiesPopup />
 </template>
 
+
 <style scoped lang="scss">
 nav {
   position: fixed;

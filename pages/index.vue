@@ -76,10 +76,21 @@
     </section>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 const showModal = ref(false);
 
 const body = process.client ? document.body : null;
+useHead({
+  title: "Cabana Lirca",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+    },
+    { hid: "robots", name: "robots", content: "index, follow" },
+  ],
+});
 
 watchEffect(() => {
   if (body && showModal.value) {
