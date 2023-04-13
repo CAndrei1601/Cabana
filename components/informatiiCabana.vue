@@ -41,7 +41,7 @@
         'flex-equal-size bg-cream! h-auto! just-center ': atractiiPage,
       }"
     >
-      <h3 font="normal">{{ $t(title) }}</h3>
+      <h3 font="normal" text="green100">{{ $t(title) }}</h3>
       <picture>
         <source
           media="(min-width: 200px)"
@@ -50,7 +50,7 @@
         />
         <img src="/images/underline_2.png" width="80" height="12" />
       </picture>
-      <p>{{ $t(text) }}</p>
+      <p text="green100">{{ $t(text) }}</p>
     </div>
   </div>
 </template>

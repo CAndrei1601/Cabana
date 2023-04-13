@@ -2,8 +2,8 @@
   <transition name="modal-fade">
     <div class="modal-overlay" @click="$emit('close-modal')">
       <div class="modal" @click.stop>
-        <h2 m="b-6">{{ $t("contact") }}</h2>
-        <p m="b-8" w="sm:444px">
+        <h2 m="b-6" text="green100">{{ $t("contact") }}</h2>
+        <p m="b-8" text="green100" w="sm:444px">
           {{ $t("pentruMaiMulte") }}
         </p>
         <div class="max-w-300px mx-auto">

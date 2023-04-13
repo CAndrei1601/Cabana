@@ -15,7 +15,7 @@
         height="48"
         alt="iconite ghilimele"
       />
-      <h2>{{ $t("recenzii") }}</h2>
+      <h2 text="green100">{{ $t("recenzii") }}</h2>
     </div>
     <div
       class="flex max-w-1088px"
@@ -59,7 +59,7 @@
           :key="`review_${i}`"
           class="swiper-slide-class"
         >
-          <p>
+          <p text="green100">
             {{ review.text }}
           </p>
         </SwiperSlide>
@@ -114,6 +114,7 @@ const setControlledSwiper = (swiper) => {
 };
 const data = ref(reviews);
 </script>
+
 <style scoped lang="scss">
 .swiper-slide-class {
   display: flex;

@@ -1,6 +1,6 @@
 <template>
   <div p="t-56px x-4 sm:x-40px">
-    <h2 text="center">{{ $t("cabana") }}</h2>
+    <h2 text="center green100">{{ $t("cabana") }}</h2>
     <div p="y-4 b-56px sm:y-8 3xl:y-64px">
       <FacilitatiCabana class="max-w-1200px" m="x-auto" />
     </div>
