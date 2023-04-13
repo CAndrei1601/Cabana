@@ -91,14 +91,14 @@ useHead({
   ],
 });
 
-useServerSeoMeta({
-  title: "Cabana Lirca",
-  ogTitle: "Cabana Lirca",
-  description:
-    "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
-  ogDescription:
-    "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
-});
+// useServerSeoMeta({
+//   title: "Cabana Lirca",
+//   ogTitle: "Cabana Lirca",
+//   description:
+//     "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+//   ogDescription:
+//     "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+// });
 
 watchEffect(() => {
   if (body && showModal.value) {
