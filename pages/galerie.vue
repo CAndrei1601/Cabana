@@ -13,6 +13,7 @@
           :key="category"
           bg="transparent"
           class="gallery-button flex-1 max-w-140px"
+          text="green100"
           :class="{ 'gallery-button-active ': category === selectedCategory }"
           @click="selectedCategory = category"
         >
