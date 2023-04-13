@@ -76,10 +76,29 @@
     </section>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 const showModal = ref(false);
 
 const body = process.client ? document.body : null;
+useHead({
+  title: "Cabana Lirca",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+    },
+  ],
+});
+
+useServerSeoMeta({
+  title: "Cabana Lirca",
+  ogTitle: "Cabana Lirca",
+  description:
+    "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+  ogDescription:
+    "Cabana Lirca este situata in Localitatea Rastolita, satul de reședință al comunei cu același nume din județul Mureș, Transilvania, România.",
+});
 
 watchEffect(() => {
   if (body && showModal.value) {
