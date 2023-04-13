@@ -118,6 +118,7 @@ a {
 .btn-primary {
   background-color: #ec5c1f;
   color: #f0ede4;
+  transition: background-color 300ms ease-in-out;
   &:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
       #ec5c1f;
@@ -127,6 +128,7 @@ a {
 .btn-secondary {
   background-color: #d1d1c7;
   color: #303e30;
+  transition: background-color 300ms ease-in-out;
 
   &:hover {
     background: #c3c3b9;
