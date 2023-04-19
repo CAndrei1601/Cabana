@@ -16,6 +16,7 @@
     "sass-loader": "^13.2.0"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^2.0.0",
     "@nuxtjs/google-fonts": "^3.0.0",
     "@unocss/nuxt": "^0.50.4",
     "nuxt-delay-hydration": "^1.1.4",
