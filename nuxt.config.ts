@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import transformerVariantGroup from "@unocss/transformer-variant-group";
 import transformerDirectives from "@unocss/transformer-directives";
+import { isProduction } from "std-env";
 export default defineNuxtConfig({
   app: {
     head: {
@@ -10,6 +11,12 @@ export default defineNuxtConfig({
         lang: "ro",
       },
       viewport: "width=device-width, initial-scale=1",
+    },
+  },
+  runtimeConfig: {
+    public: {
+      google_analytics_id: "G-W5SYXLCVWF",
+      production_mode: isProduction,
     },
   },
   css: ["@/assets/main.scss"],
