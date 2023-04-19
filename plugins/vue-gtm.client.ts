@@ -1,7 +1,6 @@
 import { createGtm } from "@gtm-support/vue-gtm";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  if (useRuntimeConfig().public.appEnv !== "production") return;
   nuxtApp.vueApp.use(
     createGtm({
       id: "GTM-M7TJ39Z",
