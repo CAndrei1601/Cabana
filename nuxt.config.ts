@@ -13,12 +13,12 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
     },
   },
-  runtimeConfig: {
-    public: {
-      google_analytics_id: "G-W5SYXLCVWF",
-      production_mode: isProduction,
-    },
-  },
+  // runtimeConfig: {
+  //   public: {
+  //     google_analytics_id: "G-W5SYXLCVWF",
+  //     production_mode: isProduction,
+  //   },
+  // },
   css: ["@/assets/main.scss"],
   modules: [
     "@nuxtjs/i18n",
