@@ -25,7 +25,7 @@
         <p :class="{ 'text-green100': contactPage }">contact@cabanalirca.ro</p>
       </div>
     </NuxtLink>
-    <NuxtLink aria-label="phone" to="tel:+40 780 123 456">
+    <NuxtLink aria-label="phone" to="tel:+40 745 252 328">
       <div flex=" ~ col" justify="center" items="center" gap="13px">
         <div :class="{ 'contact-box': contactPage }">
           <img
@@ -37,7 +37,7 @@
             alt="iconita telefon"
           />
         </div>
-        <p :class="{ 'text-green100': contactPage }">+40 780 123 456</p>
+        <p :class="{ 'text-green100': contactPage }">+40 745 252 328</p>
       </div>
     </NuxtLink>
     <NuxtLink
