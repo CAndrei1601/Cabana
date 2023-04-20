@@ -123,12 +123,10 @@ const data = ref(reviews);
 
   p {
     text-align: center;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
