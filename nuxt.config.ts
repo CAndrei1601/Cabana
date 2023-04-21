@@ -21,8 +21,10 @@ export default defineNuxtConfig({
     "nuxt-schema-org",
     "nuxt-simple-sitemap",
   ],
-  sitemap: {
-    siteUrl: "https://cabanalirca.ro",
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://cabanalirca.ro",
+    },
   },
   target: "static",
   delayHydration: {
