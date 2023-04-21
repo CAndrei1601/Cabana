@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://cabanalirca.ro",
+      siteUrl: "https://cabanalirca.ro",
     },
   },
   target: "static",
