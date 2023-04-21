@@ -30,6 +30,14 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ["/", "sitemap.xml"],
     },
+    routeRules: {
+      "/img/**": {
+        headers: { "cache-control": `public,max-age=${60},s-maxage=${60}` },
+      },
+      "/_nuxt/**": {
+        headers: { "cache-control": `public,max-age=${60},s-maxage=${60}` },
+      },
+    },
   },
   sitemap: {
     siteUrl: "https://cabanalirca.ro/",
