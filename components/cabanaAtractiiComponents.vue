@@ -126,3 +126,12 @@
   }
 }
 </style>
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/underline_1.png",
+    image: "/images/cabana.jpg",
+    image: "/images/atractii.jpg",
+  }),
+]);
+</script>

@@ -113,6 +113,15 @@ const setControlledSwiper = (swiper) => {
   controlledSwiper.value = swiper;
 };
 const data = ref(reviews);
+
+useSchemaOrg([
+  defineWebPage({
+    image: "/icons/quote-1.svg",
+    image: "/icons/quote-2.svg",
+    image: "/icons/chevron-left.svg",
+    image: "/icons/chevron-right.svg",
+  }),
+]);
 </script>
 
 <style scoped lang="scss">

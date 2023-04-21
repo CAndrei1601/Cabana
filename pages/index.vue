@@ -96,6 +96,12 @@ useHead({
   ],
 });
 
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/image_hero-banner_Mobile.jpg",
+  }),
+]);
+
 watchEffect(() => {
   if (body && showModal.value) {
     body.style.overflow = "hidden";

@@ -158,4 +158,15 @@
 defineProps<{
   isHomepage?: boolean;
 }>();
+
+useSchemaOrg([
+  defineWebPage({
+    image: "/icons/icon=atv.svg",
+    image: "/icons/icon=ciubar.svg",
+    image: "/icons/icon=kitchen.svg",
+    image: "/icons/icon=parking.svg",
+    image: "/icons/icon=rooms.svg",
+    image: "/icons/icon=wifi.svg",
+  }),
+]);
 </script>

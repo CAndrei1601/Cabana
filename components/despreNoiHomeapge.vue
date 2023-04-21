@@ -61,6 +61,13 @@
     </div>
   </section>
 </template>
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/image_despre-noi_homepage_Mobile.svg",
+  }),
+]);
+</script>
 <style scoped lang="scss">
 .image-radius {
   @screen 3xl {

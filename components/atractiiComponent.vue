@@ -27,4 +27,10 @@
 defineProps<{
   traseuIndex?: string;
 }>();
+
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/underline_2.png",
+  }),
+]);
 </script>

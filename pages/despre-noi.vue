@@ -52,6 +52,13 @@
     </div>
   </div>
 </template>
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/image_despre-noi.jpg",
+  }),
+]);
+</script>
 <style scoped lang="scss">
 .image-radius-2 {
   border-radius: 16px;

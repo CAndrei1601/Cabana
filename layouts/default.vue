@@ -193,6 +193,7 @@
     </div>
   </footer>
   <CookiesPopup />
+
 </template>
 
 
@@ -323,8 +324,12 @@ const toggleContact = () => {
 
 useSchemaOrg([
   // @todo Select Identity: https://unhead-schema-org.harlanzw.com//guide/guides/identity
-  defineWebSite({
-    name: "Cabana Lirca ",
+  defineOrganization({
+    name: 'Cabana Lirca',
+    logo: '/logo.png',
+    sameAs: [
+      'https://twitter.com/company'
+    ]
   }),
   defineWebPage(),
 ]);
