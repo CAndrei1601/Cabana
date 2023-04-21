@@ -12,6 +12,7 @@
     "@unocss/transformer-directives": "^0.50.6",
     "@unocss/transformer-variant-group": "^0.50.6",
     "nuxt": "^3.2.3",
+    "nuxt-simple-sitemap": "^2.4.11",
     "sass": "^1.59.2",
     "sass-loader": "^13.2.0"
   },
