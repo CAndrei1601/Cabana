@@ -21,11 +21,16 @@ export default defineNuxtConfig({
     "nuxt-schema-org",
     "nuxt-simple-sitemap",
   ],
-  runtimeConfig: {
-    public: {
-      siteUrl: "https://cabanalirca.ro",
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "sitemap.xml"],
     },
   },
+  sitemap: {
+    siteUrl: "https://cabanalirca.ro/",
+  },
+
   target: "static",
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing
