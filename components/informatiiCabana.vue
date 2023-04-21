@@ -54,6 +54,7 @@
     </div>
   </div>
 </template>
+
 <style scoped lang="scss">
 .rounder-image {
   border-radius: 20px 20px 0 0;
@@ -116,4 +117,10 @@ defineProps<{
   atractiiPage?: boolean;
   srcWebp?: string;
 }>();
+
+useSchemaOrg([
+  defineWebPage({
+    image: "/images/underline_2.webp",
+  }),
+]);
 </script>

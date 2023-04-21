@@ -23,8 +23,12 @@
   </transition>
 </template>
 
-<script>
-export default {};
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/icons/close.svg",
+  }),
+]);
 </script>
 <style scoped lang="scss">
 .modal-overlay {

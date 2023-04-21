@@ -56,6 +56,14 @@
     </div>
   </section>
 </template>
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/image_deer_Mobile",
+    image: "/image_deer_Desktop.webp",
+  }),
+]);
+</script>
 <style scoped lang="scss">
 .border-radius {
   border-radius: 20px;

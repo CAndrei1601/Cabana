@@ -84,6 +84,14 @@
     </div>
   </div>
 </template>
+<script setup>
+useSchemaOrg([
+  defineWebPage({
+    image: "/icons/arrow.svg",
+    image: "/images/image_partia-toplita.jpg",
+  }),
+]);
+</script>
 <style scoped lang="scss">
 .atractii-container {
   background-image: url("/images/atractii-bg-image_Mobile.webp");

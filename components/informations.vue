@@ -90,4 +90,12 @@ a {
 defineProps<{
   contactPage?: boolean;
 }>();
+
+useSchemaOrg([
+  defineWebPage({
+    image: "/icons/footer-icon_phone.svg",
+    image: "/icons/footer-email.svg",
+    image: "/icons/footer-location.svg",
+  }),
+]);
 </script>

@@ -21,6 +21,10 @@ export default defineNuxtConfig({
     "nuxt-schema-org",
     "nuxt-simple-sitemap",
   ],
+
+  schemaOrg: {
+    host: "https://cabanalirca.ro/",
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
