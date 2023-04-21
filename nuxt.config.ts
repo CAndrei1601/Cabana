@@ -19,7 +19,11 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "nuxt-delay-hydration",
     "nuxt-schema-org",
+    "nuxt-simple-sitemap",
   ],
+  sitemap: {
+    siteUrl: "https://cabanalirca.ro",
+  },
   target: "static",
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing
