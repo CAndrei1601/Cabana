@@ -81,8 +81,8 @@
 
       <div w="full" class="flex items-center" justify="center sm:start">
         <NuxtLink to="/">
-          <img src="/icons/logo-mobile.svg" width="52" height="52" alt="logo cabana lirca" display="sm:none">
-          <img src="/icons/logo.svg" width="126" height="52" alt="logo cabana lirca" display="none sm:block" > 
+          <img src="/icons/logo-mobile.svg" width="52" height="52" alt="logo cabana lirca" display="md:none">
+          <img src="/icons/logo.svg" width="126" height="52" alt="logo cabana lirca" display="none md:block" > 
         </NuxtLink>
       </div>
 
@@ -94,7 +94,7 @@
         text="cream "
         gap="sm:40px lg:48px"
       >
-        <NuxtLink class="min-w-90px sm:min-w-100px" to="/despre-noi">{{
+        <NuxtLink class="min-w-90px sm:min-w-92px" to="/despre-noi">{{
           $t("despreNoi")
         }}</NuxtLink>
         <NuxtLink to="/cabana">{{ $t("cabana") }}</NuxtLink>
