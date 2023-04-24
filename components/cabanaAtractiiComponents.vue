@@ -24,6 +24,7 @@
             w="full sm:600px lg:960px"
             h="full "
             alt="poza in mod portret cu cabana Lirca"
+            loading="lazy"
           />
         </picture>
         <div
@@ -46,6 +47,7 @@
               width="80"
               height="12"
               alt="iconita de delimitare a titlului "
+              loading="lazy"
             />
           </picture>
         </div>
@@ -75,6 +77,7 @@
             w="full sm:600px lg:960px"
             h="full"
             alt="peisaj din zona Rastolita judetul Mures"
+            loading="lazy"
           />
         </picture>
         <div

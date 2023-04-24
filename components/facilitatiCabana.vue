@@ -15,6 +15,7 @@
           width="75"
           height="56"
           alt="iconita copaci"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("peisajNatural") }}
@@ -26,6 +27,7 @@
           width="75"
           height="56"
           alt="iconita locatie retrasa"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("locatieRetrasa") }}
@@ -42,6 +44,7 @@
           width="75"
           height="56"
           alt="cana de cafea"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("bucatarieUtilata") }}
@@ -58,6 +61,7 @@
           width="75"
           height="56"
           alt="semn wifi"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("wifi") }}
@@ -106,6 +110,7 @@
           width="75"
           height="56"
           alt="iconita pat matrimonial"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("camereSpatioas") }}
@@ -122,6 +127,7 @@
           width="75"
           height="56"
           alt="iconita ciubar"
+          loading="lazy"
         />
         <p font=" normal" text=" green100" p="t-3">
           {{ $t("ciubarSiSauna") }}
