@@ -8,7 +8,7 @@
       m="x-auto"
       class="flex relative min-h-72px max-w-1920px"
       justify="between"
-      p="4 sm:(y-7 x-10) 3xl:x-168px"
+      p="x-4 y-10px sm:(y-14px  x-10) 3xl:x-168px"
     >
       <div
         class="absolute"
@@ -81,7 +81,8 @@
 
       <div w="full" class="flex items-center" justify="center sm:start">
         <NuxtLink to="/">
-          <p>LOGO</p>
+          <img src="/icons/logo-mobile.svg" width="52" height="52" alt="logo cabana lirca" display="sm:none">
+          <img src="/icons/logo.svg" width="126" height="52" alt="logo cabana lirca" display="none sm:block" > 
         </NuxtLink>
       </div>
 

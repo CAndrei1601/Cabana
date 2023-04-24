@@ -10,34 +10,36 @@
           <atractii-component traseuIndex="1">
             <p>Piatra Fantanele</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Vf. Straniorul</p>
+            <p>Vf. Strunior</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Piatra Fantanele</p>
+            <p>Vf. Bistriciorul</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Vf. Pietrosul</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Vf. Ratitis-Secu</p>
+            <p>Vf. Rețitiș</p>
+            <img src="/icons/arrow.svg" width="24" height="24" />
+            <p>Secu</p>
           </atractii-component>
         </div>
         <div class="card-2">
           <atractii-component traseuIndex="2">
-            <p>Traseu Tip Rastolitei</p>
+            <p>Tihul Răstoliței</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Saua Tihului</p>
+            <p>Șaua Tihului</p>
           </atractii-component>
         </div>
         <div class="card-3">
           <atractii-component traseuIndex="3">
-            <p>Rastolita (DN15)</p>
+            <p>Răstolița (DN15)</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
             <p>Poiana Cofu</p>
           </atractii-component>
         </div>
         <div class="card-4">
           <atractii-component traseuIndex="4">
-            <p>Rastolita</p>
+            <p>Răstolița</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Curmatura Tihului</p>
+            <p>Curmătura Tihului</p>
           </atractii-component>
         </div>
       </div>
@@ -46,9 +48,9 @@
           <atractii-component traseuIndex="5">
             <p>Gura Scurtu</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Poiana Lunga</p>
+            <p>Poiana Lungă</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Taul Zanelor</p>
+            <p>Tăul Zânelor</p>
           </atractii-component>
         </div>
         <div class="card-6">
@@ -62,11 +64,11 @@
         </div>
         <div class="card-7">
           <atractii-component traseuIndex="7">
-            <p>Rastolita</p>
+            <p>Răstolița</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Vila Visa</p>
+            <p>Vila Vișa</p>
             <img src="/icons/arrow.svg" width="24" height="24" />
-            <p>Poiana Stagii</p>
+            <p>Poiana Stegii</p>
           </atractii-component>
         </div>
       </div>
