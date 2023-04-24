@@ -37,6 +37,7 @@
         rounded=" 3xl:3xl"
         alt="landscape in apropierea de cabana Lirca"
         class="image-radius sm:min-h-480px"
+        loading="lazy"
       />
     </picture>
 

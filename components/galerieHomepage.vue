@@ -30,6 +30,7 @@
         h="full"
         class="image-radius-2 sm:min-h-480px"
         alt="imagine cu o caprioara in zona Rastolita"
+        loading="lazy"
       />
     </picture>
 

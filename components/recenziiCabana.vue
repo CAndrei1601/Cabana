@@ -14,6 +14,7 @@
         width="48"
         height="48"
         alt="iconite ghilimele"
+        loading="lazy"
       />
       <h2 text="green100">{{ $t("recenzii") }}</h2>
     </div>
@@ -42,6 +43,7 @@
             width="24"
             height="24"
             alt="iconita sageata stanga"
+            loading="lazy"
           />
         </button>
       </div>
@@ -83,6 +85,7 @@
             w="24px"
             h="24px"
             alt="iconita sageata dreapta "
+            loading="lazy"
           />
         </button>
       </div>
@@ -101,6 +104,7 @@
         width="48"
         height="48"
         alt="iconite ghilimele"
+        loading="lazy"
       />
     </div>
   </DelayHydration>
