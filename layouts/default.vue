@@ -122,9 +122,10 @@
     <div justify="center" flex=" ~ col" items="center" class="footer-bg">
       <div p="x-40px y-48px sm:(t-8 b-26px) " flex="~">
         <div flex="" gap="18px">
-          <a
-            href="https://m.facebook.com/profile.php?id=100063504583726&_rdr"
+          <NuxtLink
+            to="https://m.facebook.com/profile.php?id=100063504583726&_rdr"
             target="_blank"
+            aria-label="facebook link"
           >
             <svg
               width="40"
@@ -139,10 +140,11 @@
                 fill="#F0EDE4"
               />
             </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/cabanadeinchiriat/"
+          </NuxtLink>
+          <NuxtLink
+            to="https://www.instagram.com/cabanadeinchiriat/"
             target="_blank"
+            aria-label="instagram link"
           >
             <svg
               width="40"
@@ -165,7 +167,7 @@
                 fill="#F0EDE4"
               />
             </svg>
-          </a>
+          </NuxtLink>
         </div>
       </div>
       <div
